@@ -1,0 +1,13 @@
+node_modules
+*.log
+.DS_Store
+package-lock.json
+yarn.lock
+.vscode/
+.firebase/
+.idea/
+.nyc_output/
+coverage/
+doc/
+credentials.json
+token.json

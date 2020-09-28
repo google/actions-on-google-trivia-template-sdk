@@ -1,0 +1,35 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+parameters:
+- name: count
+  type:
+    name: count
+trainingPhrases:
+- could it be the ($count 'second' auto=true)?
+- it's the ($count '2nd' auto=true)
+- it's the ($count 'first one' auto=true)
+- is it the ($count 'first' auto=true)?
+- ($count 'second' auto=true)
+- what about the ($count 'second' auto=true)?
+- ($count '2nd' auto=true)
+- it must be the ($count 'second one' auto=false)
+- is it the ($count 'second' auto=true)?
+- it's the ($count 'first' auto=true)
+- I believe it is ($count 'first' auto=true)
+- the ($count 'first one' auto=true)
+- the answer is the ($count 'first' auto=true)
+- the ($count 'second one' auto=false)
+- is it the ($count '1st' auto=true)?
+- ($count 'first' auto=true) option
+- ($count 'first one' auto=true)

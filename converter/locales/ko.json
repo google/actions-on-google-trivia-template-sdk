@@ -1,0 +1,516 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "Help": {
+      "trainingPhrases": [
+        "게임 방법이 뭐야?",
+        "어떻게 해야 해?",
+        "어떻게 해?",
+        "이 게임 어떻게 하는 거야?",
+        "도움이 필요해",
+        "도와줘"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "아니요",
+        "됐어",
+        "충분해",
+        "안 할래",
+        "안 해",
+        "이제 그만",
+        "아니"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count '첫 번째' auto=false)인 것 같아",
+        "($count '1번' auto=false)은 어때",
+        "($count '첫 번째' auto=false)야",
+        "($count '두 번째' auto=false)인 것 같아",
+        "($count '1번' auto=false)이야",
+        "($count '2번' auto=false)이야",
+        "($count '첫 번째' auto=false)는 어때",
+        "($count '2번' auto=false)은 어때",
+        "($count '두 번째' auto=false)야",
+        "($count '첫 번째' auto=false) 꺼",
+        "($count '두 번째' auto=false) 꺼",
+        "($count '2번' auto=false)인 것 같아",
+        "($count '1번' auto=false)인 것 같아",
+        "($count '두 번째' auto=false)는 어때"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "끝내",
+        "그만할래",
+        "게임 멈춰",
+        "이제 안 할래",
+        "종료해",
+        "게임 그만",
+        "끝내 줘",
+        "취소",
+        "취소해",
+        "종료"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "다시 말해줘요",
+        "질문 다시",
+        "질문 다시 말하기",
+        "질문 반복해줘",
+        "반복",
+        "다시",
+        "질문이 뭐였죠?",
+        "질문 반복",
+        "질문을 다시 말해주세요",
+        "다시 말해줘",
+        "못 들었는데",
+        "못 들었어",
+        "한 번 더 얘기해 줄래?",
+        "다시 말해 줄래?",
+        "다시 말해 줘",
+        "다시 얘기해 줘",
+        "뭐라고 했는지 못 들었어"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "다시 플레이하기",
+        "게임 다시 해",
+        "초기화",
+        "다시 시작할래",
+        "게임 다시 시작해"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "넘어갈래",
+        "이 질문 넘겨",
+        "패스해",
+        "넘어가",
+        "다음 질문",
+        "다음 거"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "시작하기",
+        "응, 게임하자",
+        "지금 바로 해",
+        "시작해",
+        "바로 해",
+        "바로 시작해 줘"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "물론이지",
+        "그래",
+        "그럼",
+        "좋아",
+        "OK",
+        "예",
+        "응",
+        "물론",
+        "당연하지"
+      ]
+    },
+    "Score": {
+      "trainingPhrases": [
+        "순위",
+        "내가 이기고 있어?",
+        "승자는 누구야?",
+        "점수판",
+        "누가 이기고 있니",
+        "랭킹",
+        "순위표",
+        "나 잘 하고 있는 거야?",
+        "득점판",
+        "내가 지는 거야?",
+        "내가 이기는 거야?",
+        "내 점수는 몇 점이야?",
+        "나 지고 있니?",
+        "스코어보드를 알려줄래",
+        "내가 지고 있어?",
+        "내 상황은 어때?",
+        "점수가 어떻게 돼?",
+        "누가 승리했지?",
+        "나 이기고 있니?",
+        "내 점수는 뭐야?",
+        "내 스코어는 어떠니?",
+        "스코어를 말해줘",
+        "스코어보드를 보여줘",
+        "누가 이겼어?",
+        "현재 스코어는 어떻게 돼",
+        "점수를 알려줘",
+        "점수는?",
+        "득점판을 보여줄래",
+        "스코어를 알려줄래",
+        "스코어는 어때?",
+        "지는 사람이 누구지",
+        "스코어는?",
+        "스코어가 어떻게 돼",
+        "스코어를 알려줘",
+        "점수는 어때?",
+        "지금 득점 상황을 말해줄래",
+        "스코어는 어떠니?",
+        "득점 상황을 말해줄래",
+        "누가 지고 있어",
+        "서열",
+        "누가 지고 있니",
+        "이기는 사람이 누구지",
+        "누가 이기고 있어",
+        "지금 스코어를 말해줘",
+        "내가 잘 하고 있니?"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "1번째",
+              "첫째",
+              "첫 번째",
+              "1번",
+              "1"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "두 번째로",
+              "둘째",
+              "2번",
+              "두 번째",
+              "2"
+            ]
+          },
+          "third": {
+            "synonyms": [
+              "제삼",
+              "3 일",
+              "마지막",
+              "세번째",
+              "세",
+              "세번째 것"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "샘플 트리비아 퀴즈",
+      "fullDescription": "샘플 트리비아 퀴즈",
+      "pronunciation": "샘플 트리비아 퀴즈",
+      "sampleInvocations": [
+        "샘플 트리비아 퀴즈한테 말하기"
+      ],
+      "shortDescription": "샘플 트리비아 퀴즈",
+      "voice": "female_1"
+    }
+  },
+  "strings": {
+    "all_correct_prompts": [
+        "바로 그거죠! $session.params.correctCount개를 맞췄습니다. 잘하셨습니다!",
+        "새로운 영웅이 탄생했어요. $session.params.correctCount개를 맞췄습니다. 모두 정답입니다.",
+        "저만큼 상식 퀴즈를 좋아하시나봐요. 모두 정답을 맞추셨어요. $session.params.correctCount 문제 맞추셨습니다. 새로운 상식 퀴즈 영웅입니다.",
+        "얼마나 많이 맞췄을까요? 싹 다 맞추셨어요. 전부요! 정답은 $session.params.correctCount개이고 오답은 없습니다. 잘하셨습니다!"
+    ],
+    "correct_answer_only_prompts": [
+        "$session.params.correctAnswer입니다.",
+        "정답은 $session.params.correctAnswer입니다."
+    ],
+    "deeplink_prompt": [
+        "만세! 문제가 몇 개 준비되어 있습니다."
+    ],
+    "disagree_prompts": [
+        "아닌 것 같으세요? 다시 확인했지만 답은 맞습니다. 죄송합니다.",
+        "이런, 동의하지 않으시는 것 같지만 제가 보기엔 답은 맞습니다. 죄송합니다."
+    ],
+    "end_prompts": [
+        "점수는 $session.params.correctCount점 만점에 $session.params.questionsPerGame점입니다. 안녕히 가세요!"
+    ],
+    "fallback_prompt_1": [
+        "그만하시겠습니까?",
+        "이제 그만할까요?",
+        "이제 그만하시는 건가요?"
+    ],
+    "fallback_prompt_2": [
+        "앗 이런! 문제가 해결되지 않았으니 그만하는 게 좋겠어요. 곧 다시 플레이해요!"
+    ],
+    "feeling_lucky_prompts": [
+        "좋아요. 무작위로 답변을 선택해 보겠습니다."
+    ],
+    "final_round_prompts": [
+        "아쉽지만 마지막 문제입니다.",
+        "마지막 문제가 나갑니다.",
+        "마지막 문제 나갑니다.",
+        "단 한 문제 남았습니다. 훌쩍.",
+        "벌써 마지막 문제인가요? 시작합니다."
+    ],
+    "first_round_prompts": [
+        "숨을 깊게 들이쉬세요. 첫 번째 문제입니다.",
+        "첫 번째 문제 나갑니다.",
+        "곧 첫 번째 문제가 나갑니다."
+    ],
+    "forced_selection_prompts": [
+        "$session.params.category에서 $session.params.difficulty로 해보죠."
+    ],
+    "game_over_prompts_1": [
+        "게임이 끝났습니다.",
+        "게임이 끝난 것 같네요.",
+        "마지막 문제였으므로 게임이 종료되었습니다.",
+        "게임 끝입니다."
+    ],
+    "game_over_prompts_2": [
+        "이제 게임 결과를 확인해 보겠습니다.",
+        "좋아요. 이제 점수를 확인할 시간입니다.",
+        "게임 결과는 다음과 같습니다."
+    ],
+    "greeting_prompts_1": [
+        "안녕하세요. $session.params.title 시간입니다!",
+        "우와. 오늘 함께 $session.params.title 게임을 할 수 있어서 기뻐요!"
+    ],
+    "greeting_prompts_2": [
+        "안녕하세요.  다시 $session.params.title 게임을 해 봐요.",
+        "$session.params.title 게임을 하기 위해 돌아오셨군요.",
+        "안녕하세요. $session.params.title에 돌아오신 것을 환영합니다.",
+        "$session.params.title 게임을 더 해 볼까요."
+    ],
+    "help_prompts": [
+        "도움말을 알려 드릴게요. 이 게임에서는 객관식 질문 $session.params.questionsPerGame개를 드립니다. 정답을 말하거나 일번, 이번, 삼번 이렇게 번호를 얘기하셔도 됩니다. 새 게임을 시작하거나 현재 진행 중인 게임을 중지하거나 질문을 반복하도록 요청하실 수 있습니다. 계속 플레이하시겠습니까?"
+    ],
+    "hint_prompts": [
+        "죄송하지만 힌트는 드릴 수 없어요. 하지만 지금은 필요 없으실 거예요. 정말 잘하시네요. 다시 시도해보죠.",
+        "죄송하지만 힌트를 드리는 것은 규칙 위반입니다. 문제를 다시 알려 드릴게요.",
+        "힌트를 드릴 수 있으면 좋겠지만 그럴 수 없어요. 다시 시도해 보세요."
+    ],
+    "introduction_prompts": [
+        "준비가 되셨나요? 게임을 시작해보죠.",
+        "오케이, 시작합니다.",
+        "이제 시작해 볼까요?",
+        "게임을 시작해 보겠습니다."
+    ],
+    "last_category_difficulty_prompt": [
+        "선택할 수 있는 마지막 옵션입니다."
+    ],
+    "lets_play_prompts": [
+        "게임을 시작해 보겠습니다.",
+        "이제 게임을 시작합니다.",
+        "오늘 운이 좋으시길 바라요.",
+        "게임을 시작합니다.",
+        "반갑습니다! 이제 게임을 시작해보죠.",
+        "자, 게임을 시작해보죠.",
+        "지금 게임을 시작합니다.",
+        "시작합니다.",
+        "게임을 시작할 시간입니다."
+    ],
+    "misc_prompts_false": [
+        "거짓"
+    ],
+    "misc_prompts_more": [
+        "더보기"
+    ],
+    "misc_prompts_no": [
+        "아니요"
+    ],
+    "misc_prompts_or": [
+        "또는"
+    ],
+    "misc_prompts_play_again": [
+        "다시 하기"
+    ],
+    "misc_prompts_stop_playing": [
+        "그만하기"
+    ],
+    "misc_prompts_true": [
+        "참"
+    ],
+    "misc_prompts_yes": [
+        "예"
+    ],
+    "next_question_prompts": [
+        "다음 문제입니다.",
+        "다음 문제를 풀어보세요.",
+        "이번 문제를 풀어보세요.",
+        "재미있는 문제네요.",
+        "다음 문제가 나갑니다."
+    ],
+    "no_input_prompts": [
+        "입력이 감지되지 않았습니다.",
+        "응답이 없습니다.",
+        "다시 시작될 때까지 게임 시퀀스를 종료합니다."
+    ],
+    "no_input_prompts_1": [
+        "입력이 감지되지 않았습니다."
+    ],
+    "no_input_prompts_2": [
+        "응답이 없습니다."
+    ],
+    "no_input_prompts_3": [
+        "다시 시작될 때까지 게임 시퀀스를 종료합니다."
+    ],
+    "none_correct_prompts": [
+        "저런! 모두 오답이지만 걱정하지 마세요. 문제가 어려웠어요.",
+        "이런! 이번에는 정답을 맞추지 못해서 안타깝습니다. 다음엔 분명 더 잘 하실 거예요!",
+        "이거 실화인가요? 모두 틀렸습니다. 하지만 평소엔 엄청 잘하시잖아요.",
+        "거짓말은 할 수 없네요. 모두 오답입니다. 하지만 문제가 어려웠어요."
+    ],
+    "play_again_category_difficulty": [
+        "$session.params.category $session.params.difficulty 게임을 다시 하시겠어요? 아니면 바꿀까요?"
+    ],
+    "play_again_question_prompts": [
+        "다시 플레이하고 싶으시죠. 네?",
+        "다시 플레이해요. 어때요?",
+        "다시 플레이할 수 있을까요?"
+    ],
+    "question_prompts": [
+        "문제가 나갑니다. 준비하세요.",
+        "이거 한 번 해보세요.",
+        "재미있는 문제네요.",
+        "시작합니다.",
+        "잘 하실 수 있을 거예요."
+    ],
+    "questions_count_prompts": [
+        "문제 $session.params.questionsPerGame개가 준비되어 있습니다.",
+        "문제가 $session.params.questionsPerGame개 나갑니다."
+    ],
+    "quit_prompts": [
+        "저는 정말 재미있었어요. 즐겨우셨으면 좋겠어요. 안녕히 가세요.",
+        "플레이해 주셔서 감사합니다. 곧 다시 뵙기를 바랄게요.",
+        "안녕히 가세요. 곧 다시 플레이할 수 있으면 좋겠어요."
+    ],
+    "rapid_reprompts": [
+        "다시 말씀해 주세요.",
+        "다시 한 번 부탁드립니다.",
+        "다시 말씀해 주시겠어요?"
+    ],
+    "re_prompt": [
+        "멋져요!",
+        "대단하네요!",
+        "끝내줘요!",
+        "오호!"
+    ],
+    "repeat_prompts": [
+        "당연하죠.",
+        "그래요."
+    ],
+    "restart_confirmation": [
+        "처음부터 다시 시작하시겠어요?",
+        "다시 시작할까요?",
+        "처음부터 전부 다시 시작할까요?"
+    ],
+    "restart_yes": [
+        "좋아요. 다시 시작하겠습니다.",
+        "좋아요. 다시 시작해 보죠.",
+        "좋아요, 다시 해 보겠습니다."
+    ],
+    "right_answer_prompts_1": [
+        "와! 맞았어요!",
+        "맞습니다!",
+        "정말 잘하셨습니다!",
+        "잘하셨습니다!",
+        "정답입니다.",
+        "네, 정답입니다.",
+        "정답입니다, 완전 똑똑하시네요!",
+        "맞습니다. 멋지시네요.",
+        "정답 기계 같아요.",
+        "항상 맞출 수야 없겠지만 이번에는 정답입니다.",
+        "알겠습니다. 간단하죠.",
+        "쉽게 맞추시네요. 정답이네요.",
+        "맞아요, 정답입니다.",
+        "정답입니다.",
+        "맞았습니다.",
+        "정답이라고 말씀드릴게요.",
+        "정답이네요."
+    ],
+    "right_answer_prompts_2": [
+        "$session.params.correctAnswer입니다!",
+        "$session.params.correctAnswer입니다!"
+    ],
+    "round_prompts": [
+        "$session.params.questionNumber번째 문제가 나갑니다.",
+        "$session.params.questionNumber번째 문제를 드리겠습니다.",
+        "$session.params.questionNumber번째 문제입니다.",
+        "$session.params.questionNumber번째 문제는 어떤 것일까요?"
+    ],
+    "say_number_prompts": [
+        "정답 번호만 말씀해 주세요."
+    ],
+    "selection_confirmation_prompts": [
+        "$session.params.selection, 좋습니다."
+    ],
+    "skip_prompts": [
+        "네. 계속하겠습니다.",
+        "다음 문제가 나갑니다.",
+        "걱정 마세요.",
+        "당연합니다.",
+        "다음 문제를 시도해볼까요?",
+        "알겠습니다.",
+        "알겠습니다. 그 문제는 건너뛰겠습니다."
+    ],
+    "some_correct_prompts": [
+        "잘하셨습니다. $session.params.correctCount개를 맞췄습니다. 대단하십니다.",
+        "$session.params.correctCount개를 맞췄습니다. 정말 잘하셨습니다! 다음에는 더 잘하실 거예요.",
+        "잘하셨습니다. 이번에는 $session.params.correctCount개를 맞췄습니다. 다음 번에는 더 많이 정답을 맞추실 거예요!"
+    ],
+    "stop_prompts": [
+        "저야 계속해서 게임을 해도 괜찮지만 그만 하고 싶으실 땐 중지라고 얘기해 주세요.",
+        "계속 게임하셨으면 좋겠지만 일찍 끝내고 싶다면 중지라고 말해주세요.",
+        "게임을 그만하신다면 저야 좀 아쉽긴 하지만 그래도 끝내야 야 하신다면 중지라고 말해주세요."
+    ],
+    "switch_prompts": [
+        "바꾸겠습니다!"
+    ],
+    "true_false_prompts": [
+        "참일까요, 거짓일까요. $session.params.currentQuestion"
+    ],
+    "wrong_answer_for_question_promp": [
+        "지금은 해당되지 않지만 혹시 모르니 기억해 두세요."
+    ],
+    "wrong_answer_prompts_1": [
+        "저런, 정답을 놓치셨습니다.",
+        "아깝네요! 하지만 오답입니다.",
+        "이런, 아닙니다.",
+        "안타깝지만 오답이네요.",
+        "이번 문제는 틀렸습니다.",
+        "안타깝지만 틀렸어요.",
+        "아니요, 정답이 아닙니다.",
+        "맞히실 뻔했는데… 틀렸네요.",
+        "거의 맞힐 뻔했는데, 안타깝습니다.",
+        "저런, 틀렸네요.",
+        "아니요, 꼭 그렇지는 않아요.",
+        "문제가 어려웠어요. 죄송합니다.",
+        "안타깝지만 정답을 놓치셨어요.",
+        "그럴듯하지만 틀렸습니다. 죄송합니다."
+    ],
+    "wrong_answer_prompts_2": [
+        "정답은 $session.params.correctAnswer입니다.",
+        "사실 $session.params.correctAnswer입니다.",
+        "제가 원하던 답은 $session.params.correctAnswer입니다.",
+        "정답은 $session.params.correctAnswer입니다.",
+        "제가 원한 정답은 $session.params.correctAnswer입니다.",
+        "$session.params.correctAnswer입니다. 다음번에는 더 잘하실 수 있어요."
+    ],
+    "your_score_prompts": [
+        "점수는 $session.params.correctCount점인 것 같습니다.",
+        "점수는 $session.params.correctCount점입니다."
+    ]
+  }
+}

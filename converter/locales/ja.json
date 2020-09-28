@@ -1,0 +1,507 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "Help": {
+      "trainingPhrases": [
+        "ヘルプ",
+        "助けて",
+        "何をしたらいい？",
+        "このゲームのやり方は？",
+        "どうしたらいい？",
+        "このゲームはどうやってやるの？"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "いいえ",
+        "結構です",
+        "やらない",
+        "バイバイ",
+        "やりたくない",
+        "いや、いい"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count '最初のほう' auto=true)",
+        "($count '後のほう' auto=true)",
+        "($count '後者' auto=true)",
+        "($count '前者' auto=true)",
+        "($count '1番' auto=false)かも",
+        "($count '1つ目' auto=false)かも",
+        "($count '2つ目' auto=false)かも",
+        "($count '2番' auto=true)",
+        "($count '1番' auto=true)",
+        "($count '2番目' auto=true)",
+        "($count '2番' auto=false)かも",
+        "($count '1番目' auto=false)かも",
+        "($count '1番目' auto=true)",
+        "($count '2つ目' auto=true)",
+        "($count '1つ目' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "ゲームを終了する",
+        "やめる",
+        "ゲームをやめる",
+        "もうゲームしたくない",
+        "キャンセル",
+        "中断",
+        "ゲームを中止する",
+        "終了",
+        "ゲームはもういい",
+        "停止",
+        "ゲームを終了する",
+        "やめる"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "質問をリピートして",
+        "質問をもう一度",
+        "質問を繰り返して",
+        "もう一回言って",
+        "もう一度言ってくれる？",
+        "なんて言った？",
+        "聞こえなかった"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "やり直す",
+        "初めからやり直して",
+        "もう一度プレイ",
+        "やり直し",
+        "ゲームを最初から",
+        "もう一回やる",
+        "ゲームをやり直す",
+        "リセット"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "スキップ",
+        "次の質問",
+        "パス",
+        "次行って"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "スタート",
+        "やろう",
+        "待ちきれない",
+        "OK、やろう"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "うん、やろう",
+        "はい",
+        "やる",
+        "そうだね",
+        "いいよ",
+        "OK",
+        "もちろん"
+      ]
+    },
+    "Score": {
+      "trainingPhrases": [
+        "リーダーボード",
+        "誰の勝ち？",
+        "現在の得点を教えて",
+        "私はどんな感じ？",
+        "ランキング",
+        "スコアボードを教えて",
+        "何点？",
+        "得点表を教えて",
+        "得点表",
+        "誰が勝ってる？",
+        "今の得点は？",
+        "順番",
+        "私勝ってる？",
+        "スコアを教えて",
+        "勝ってる？",
+        "敗者を教えて",
+        "勝者を教えて",
+        "最新のスコアを教えて",
+        "誰が負けてる？",
+        "点数はどう？",
+        "得点は？",
+        "私のスコアは？",
+        "誰が勝った？",
+        "勝ったのは誰？",
+        "負けてるのは誰？",
+        "スコアは？",
+        "順位",
+        "負けてるかな？",
+        "私負けてる？",
+        "勝ってるかな？",
+        "私の得点は？",
+        "私の点数は？",
+        "得点を教えて",
+        "スコアボード",
+        "勝ってるのは誰？",
+        "今の調子はどう？",
+        "順位を教えて",
+        "私はどう？",
+        "得点はどう？",
+        "負けてる？",
+        "点数は？"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "1",
+              "前者",
+              "最初のほう",
+              "1番",
+              "1番目",
+              "1つ目",
+              "1個目"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "2",
+              "後者",
+              "後のほう",
+              "2番",
+              "2番目",
+              "2つ目",
+              "2個目"
+            ]
+          },
+          "third": {
+            "synonyms": [
+              "第三",
+              "3番目",
+              "最終",
+              "最後に",
+              "第三に",
+              "三",
+              "三つ目",
+              "最後の一つ"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "雑学クイズのサンプル",
+      "fullDescription": "雑学クイズのサンプル",
+      "pronunciation": "雑学クイズのサンプル",
+      "sampleInvocations": [
+        "雑学クイズのサンプルにつないで"
+      ],
+      "shortDescription": "雑学クイズのサンプル",
+      "voice": "female_1"
+    }
+  },
+  "strings": {
+    "all_correct_prompts": [
+        "すばらしい戦いでした。$session.params.correctCount 問すべて正解です。やりましたね！",
+        "新たなクイズ王の誕生です。$session.params.correctCount 問正解。つまり全問正解です！",
+        "ゲームは楽しめましたか？間違いないですね。だって $session.params.correctCount 問全部正解なんですから。あなたこそがトリビアの星です。",
+        "何問正解したと思いますか？なんと全問正解です。$session.params.correctCount 問正解、不正解なし。すばらしいですね！"
+    ],
+    "correct_answer_only_prompts": [
+        "答えは$session.params.correctAnswerでした。",
+        "正解は$session.params.correctAnswerでした。"
+    ],
+    "deeplink_prompt": [
+        "さあ、それでは問題を出しますね。"
+    ],
+    "disagree_prompts": [
+        "納得いきませんか？念のため確認しましたが、やはり不正解でした。残念。",
+        "納得いかないようですね。でもやはり不正解のようです。残念ですが。"
+    ],
+    "end_prompts": [
+        "$session.params.correctCount 問中 $session.params.questionsPerGame 問正解でした。それではまた！"
+    ],
+    "fallback_prompt_1": [
+        "終了しますか？",
+        "終了しますか？",
+        "もう終わりにしますか？"
+    ],
+    "fallback_prompt_2": [
+        "問題が解決しないためゲームを終了します。また遊びに来てください。"
+    ],
+    "feeling_lucky_prompts": [
+        "いいですね！それでは答えをランダムに選びます。"
+    ],
+    "final_round_prompts": [
+        "とうとう最後の問題となりました。",
+        "さあ、最後の問題です。",
+        "いよいよ最後の問題です。",
+        "最後の 1 問です。がんばってください。",
+        "早くも最後の問題です。行きますよ。"
+    ],
+    "first_round_prompts": [
+        "リラックスしてください。では第 1 問です。",
+        "1 問目はこちらです。",
+        "第 1 問、行きますよ。"
+    ],
+    "forced_selection_prompts": [
+        "$session.params.category で $session.params.difficulty にしましょう。"
+    ],
+    "game_over_prompts_1": [
+        "以上でゲームは終了です。",
+        "これで終了となります。",
+        "今のが最後の問題でした。ゲーム終了です。",
+        "これでゲーム終了です。"
+    ],
+    "game_over_prompts_2": [
+        "それでは結果を発表します。",
+        "それでは得点を発表しましょう。",
+        "では結果発表です。"
+    ],
+    "greeting_prompts_1": [
+        "こんにちは。$session.params.title へようこそ！",
+        "ありがとうございます。$session.params.title で楽しい時間を過ごしましょう！"
+    ],
+    "greeting_prompts_2": [
+        "こんにちは。今日も $session.params.title で楽しみましょう！",
+        "$session.params.title でまた会えてうれしいです。",
+        "$session.params.title へようこそ。またお目にかかれましたね。",
+        "もう少し $session.params.title をプレイしましょう！"
+    ],
+    "help_prompts": [
+        "遊び方を簡単に説明します。このゲームでは、選択式の問題を $session.params.questionsPerGame 問出題します。答えをそのまま言っても構いませんし、番号で答えることもできます。新しいゲームを始めたり、途中で止めたり、問題を聞き直したりできます。このまま続けますか？"
+    ],
+    "hint_prompts": [
+        "ヒントは出せないんです。でもあなたならヒントなしで大丈夫。もう一度答えをどうぞ！",
+        "ヒントなしというルールなんです。もう一度問題を読みますね。",
+        "ヒントはダメって言われてるんです。もう一度答えてみてください。"
+    ],
+    "introduction_prompts": [
+        "準備はいいですか？では始めましょう。",
+        "さあ始めましょう。",
+        "さっそく始めましょう。",
+        "それでは始めましょう。"
+    ],
+    "last_category_difficulty_prompt": [
+        "こちらが最後の選択肢です。"
+    ],
+    "lets_play_prompts": [
+        "それでは始めましょう。",
+        "さあ、そろそろゲームを始めましょう。",
+        "幸運を祈ります。",
+        "始めましょう。",
+        "この瞬間を楽しみにしていました。では始めましょう。",
+        "さあ、ゲームを始めましょう。",
+        "いよいよゲームを始めます。",
+        "参ります。",
+        "いよいよ、このときがやってきました。"
+    ],
+    "misc_prompts_false": [
+        "×|ばつ"
+    ],
+    "misc_prompts_more": [
+        "その他"
+    ],
+    "misc_prompts_no": [
+        "いいえ"
+    ],
+    "misc_prompts_or": [
+        "または"
+    ],
+    "misc_prompts_play_again": [
+        "再びプレー"
+    ],
+    "misc_prompts_stop_playing": [
+        "遊ぶのやめて"
+    ],
+    "misc_prompts_true": [
+        "○|まる"
+    ],
+    "misc_prompts_yes": [
+        "はい"
+    ],
+    "next_question_prompts": [
+        "では次の問題です。",
+        "次はこちらです。",
+        "この問題はいかがでしょう？",
+        "なかなかいい問題ですよ。",
+        "ではもう 1 問。"
+    ],
+    "no_input_prompts": [
+        "入力を検出できません。",
+        "ユーザーからの応答がありません。",
+        "ゲーム シーケンスが完了し、再開を待っています。"
+    ],
+    "no_input_prompts_1": [
+        "どうぞお答えください。"
+    ],
+    "no_input_prompts_2": [
+        "回答を待っています。"
+    ],
+    "no_input_prompts_3": [
+        "ゲームの再開を待っています。"
+    ],
+    "none_correct_prompts": [
+        "残念。正解はありませんでした。問題が難しかったですね。",
+        "残念ながら、すべて不正解でした。でも次はきっと大丈夫です！",
+        "悲しいことに、全部間違えてしまったようです。でもクイズのセンスはあると思うので次回がんばってください。",
+        "正直に言うと、すべて不正解でした。きっと問題が難しかったんですね。"
+    ],
+    "play_again_category_difficulty": [
+        "$session.params.category $session.params.difficultyをもう一度プレイしますか？それとも変更しますか？"
+    ],
+    "play_again_question_prompts": [
+        "他の問題でもう一度遊びますか？",
+        "もう一度プレイしましょう。いかがですか？",
+        "もう一度遊びますか？"
+    ],
+    "question_prompts": [
+        "準備はいいですか。問題です。",
+        "この問題はいかがでしょう？",
+        "これは挑戦しがいのある問題ですよ。",
+        "参ります。",
+        "よろしいですか。"
+    ],
+    "questions_count_prompts": [
+        "問題は全部で $session.params.questionsPerGame 問です。",
+        "これから $session.params.questionsPerGame 問出題します。"
+    ],
+    "quit_prompts": [
+        "ありがとうございました。楽しんでいただけましたか？それではまた！",
+        "おつかれさまでした。また挑戦してくださいね。",
+        "それではまた会いましょう！"
+    ],
+    "rapid_reprompts": [
+        "もう一度言ってください。",
+        "もう一度お願いします。",
+        "何とおっしゃいましたか？"
+    ],
+    "re_prompt": [
+        "いいですね！",
+        "すばらしいです！",
+        "すごいです！",
+        "やりましたね！"
+    ],
+    "repeat_prompts": [
+        "そのとおりです。",
+        "ええ。"
+    ],
+    "restart_confirmation": [
+        "最初から始めますか？",
+        "やり直しますか？",
+        "最初からやり直しますか？"
+    ],
+    "restart_yes": [
+        "ではやり直しましょう。",
+        "では最初から始めます。",
+        "ではもう一度最初から。"
+    ],
+    "right_answer_prompts_1": [
+        "はい、正解です。",
+        "正解。おみごとです！",
+        "正解です。",
+        "やりましたね！",
+        "大正解！",
+        "そのとおりです。",
+        "正解！さすがです。",
+        "正解です。すごいですね！",
+        "間違える気配がありませんね。",
+        "なんと今回も正解です！",
+        "正解です。余裕ですね。",
+        "まるで問題が簡単みたいですね。正解です。",
+        "はい、そうです。",
+        "正解です。",
+        "そのとおり。正解です。",
+        "まさにそのとおり。",
+        "よくご存知ですね！"
+    ],
+    "right_answer_prompts_2": [
+        "$session.params.correctAnswerです。",
+        "$session.params.correctAnswerです。"
+    ],
+    "round_prompts": [
+        "それでは第 $session.params.questionNumber 問です。",
+        "こちらが $session.params.questionNumber 問目です。",
+        "問題 $session.params.questionNumber。",
+        "では $session.params.questionNumber 問目に参りましょう。"
+    ],
+    "say_number_prompts": [
+        "番号でお答えください。"
+    ],
+    "selection_confirmation_prompts": [
+        "$session.params.selection ですね。"
+    ],
+    "skip_prompts": [
+        "では次に進みましょう。",
+        "次に参ります。",
+        "大丈夫ですよ。",
+        "かしこまりました。",
+        "それでは次の問題。",
+        "了解しました。",
+        "パスですね。"
+    ],
+    "some_correct_prompts": [
+        "すばらしい！$session.params.correctCount 問正解です。おめでとうございます。",
+        "$session.params.correctCount 問正解でした。よかったですね！次もがんばってください。",
+        "やりましたね！今回は $session.params.correctCount 問正解でした。次はさらに上を目指しましょう！"
+    ],
+    "stop_prompts": [
+        "ゲームをやめたくなったら、いつでもストップと言ってください。",
+        "途中で終了したい場合は、ストップと言ってください。",
+        "ゲームをやめたいときは、いつでもストップと言ってください。"
+    ],
+    "switch_prompts": [
+        "それでは変更しましょう！"
+    ],
+    "true_false_prompts": [
+        "○×問題です。$session.params.currentQuestion"
+    ],
+    "wrong_answer_for_question_promp": [
+        "残念。でもその答えは覚えておいてくださいね。"
+    ],
+    "wrong_answer_prompts_1": [
+        "うーん、残念。",
+        "近い！でも違います。",
+        "あー、おしいです。",
+        "残念、違います。",
+        "残念、不正解です。",
+        "残念、ちょっと違います。",
+        "いえ、違います。",
+        "おしかったですね。",
+        "おしいです。",
+        "うーん、ちょっと違いましたね。",
+        "いえ、ちょっと違います。",
+        "これは難問でしたね。残念。",
+        "残念ながら不正解です。",
+        "いい読みですが、違います。残念。"
+    ],
+    "wrong_answer_prompts_2": [
+        "正解は$session.params.correctAnswerです。",
+        "答えは$session.params.correctAnswerです。",
+        "$session.params.correctAnswerとお答えいただきたかったんです。",
+        "$session.params.correctAnswerだったら正解だったのですが。",
+        "$session.params.correctAnswerとお答えいただきたかったです。",
+        "答えは$session.params.correctAnswerでした。また次回がんばってくださいね。"
+    ],
+    "your_score_prompts": [
+        "あなたの得点は $session.params.correctCount 点です。",
+        "得点は $session.params.correctCount 点です。"
+    ]
+  }
+}

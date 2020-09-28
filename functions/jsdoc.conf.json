@@ -1,0 +1,26 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "recurseDepth": 10,
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "source": {
+    "include": ["."],
+    "exclude": ["node_modules", "test"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "destination": "doc",
+    "encoding": "utf8",
+    "recurse": true,
+    "verbose": true
+  }
+}

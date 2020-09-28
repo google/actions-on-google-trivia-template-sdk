@@ -1,0 +1,539 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "Help": {
+      "trainingPhrases": [
+        "au secours",
+        "je dois faire quoi ?",
+        "aide",
+        "c'est quoi la règle ?",
+        "comment est-ce qu'on joue ?",
+        "à l'aide",
+        "aide-moi",
+        "que dois-je faire",
+        "c'est quoi le but du jeu ?",
+        "comment on joue à ce jeu ?",
+        "qu'est-ce que je dois faire ?",
+        "c'est quoi la règle du jeu ?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "non merci",
+        "c'est bon",
+        "je ne veux pas",
+        "non",
+        "ça ira",
+        "je ne veux pas jouer",
+        "au revoir"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "c'est ($count 'la seconde' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "c'est ($count 'la deuxième' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "c'est ($count 'la deuxième' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "($count 'la seconde' auto=true)",
+        "peut-être l($count 'e deuxième' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "ferme le jeu",
+        "annule",
+        "arrête le jeu",
+        "stop",
+        "quitte le jeu",
+        "je ne veux plus jouer"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "répète",
+        "je n'ai pas entendu",
+        "quoi ?",
+        "qu'est-ce que tu as dit",
+        "hein ?",
+        "tu as dit quoi",
+        "tu peux répéter ?",
+        "je n'ai pas compris"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Jouer à nouveau",
+        "rejoue",
+        "on recommence le jeu",
+        "rejouer",
+        "on joue encore",
+        "on rejoue",
+        "relance",
+        "relance le jeu",
+        "recommencer",
+        "on recommence"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "passe cette question",
+        "question suivante",
+        "passer",
+        "passe à la suivante"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Commencer",
+        "on y va",
+        "c'est parti on joue",
+        "j'ai hâte",
+        "OK on joue",
+        "ça marche",
+        "allez"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "pourquoi pas",
+        "ça marche",
+        "allons-y",
+        "c'est parti",
+        "entendu",
+        "ça roule",
+        "très bien",
+        "OK",
+        "Oui",
+        "probablement",
+        "bien sûr",
+        "absolument",
+        "bien entendu",
+        "sans aucun doute"
+      ]
+    },
+    "Score": {
+      "trainingPhrases": [
+        "qui est vainqueur ?",
+        "donne-moi le score actuel",
+        "qui gagne",
+        "suis-je en train de gagner ?",
+        "le score ?",
+        "dis-moi le score actuel",
+        "donne-moi le classement",
+        "quel est le score ?",
+        "meilleurs scores",
+        "donne-moi les meilleurs scores",
+        "quel est mon score ?",
+        "c'est quoi le score ?",
+        "les rangs",
+        "suis-je en train de perdre ?",
+        "donne le score",
+        "est-ce que je suis en train de gagner ?",
+        "est-ce que je perds ?",
+        "dis-moi le classement",
+        "c'est quoi mon score ?",
+        "qui a gagné ?",
+        "dis-mois le score",
+        "qui est en tête pour le moment",
+        "annonce le score",
+        "donne-moi le score",
+        "je m'en sors bien ?",
+        "les meilleures scores",
+        "'et le score, c''est quoi ?'",
+        "comment je me débrouille ?",
+        "qui a remporté la partie ?",
+        "annonce le score actuel",
+        "qui perd",
+        "qui est en train de perdre",
+        "qui est le perdant pour le moment",
+        "le classement",
+        "et mon score, c'est quoi ?",
+        "qui est en train de gagner",
+        "classement",
+        "score ?",
+        "est-ce que je suis en train de perdre ?",
+        "est-ce que je gagne ?",
+        "rang",
+        "comment je m'en sors ?"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "le premier",
+              "numéro un",
+              "la première",
+              "1ʳᵉ",
+              "premier",
+              "première",
+              "1ᵉʳ"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "le deuxième",
+              "le second",
+              "numéro deux",
+              "la seconde",
+              "deuxième",
+              "la deuxième",
+              "second"
+            ]
+          },
+          "third": {
+            "synonyms": [
+              "troisième",
+              "3e",
+              "dernier",
+              "enfin",
+              "troisièmement",
+              "Trois",
+              "le troisième",
+              "le dernier"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "Exemple de quiz Canada",
+      "fullDescription": "Exemple de quiz Canada",
+      "pronunciation": "Exemple de quiz Canada",
+      "sampleInvocations": [
+        "Parler avec Exemple de quiz Canada"
+      ],
+      "shortDescription": "Exemple de quiz Canada",
+      "voice": "female_1"
+    }
+  },
+  "strings": {
+    "all_correct_prompts": [
+        "Ça, c'est la façon de répondre à un jeu-questionnaire. Toutes les $session.params.correctCount réponses sont correctes. Bravo à vous!",
+        "Vous êtes mon idole! Vous avez bien répondu à $session.params.correctCount questions. C'est un score parfait!",
+        "Aimez-vous les jeux-questionnaires autant que moi? Je crois que oui, car vous avez eu tout bon! Vous avez donc répondu correctement à $session.params.correctCount questions. Oui, vous. Mon idole des jeux-questionnaires.",
+        "Combien de bonnes réponses avez-vous eues? Seulement toutes les réponses. Toutes les réponses, c'est-à-dire $session.params.correctCount correctes et zéro incorrecte. Vous êtes incroyable!"
+    ],
+    "correct_answer_only_prompts": [
+        "C'était $session.params.correctAnswer.",
+        "La réponse était $session.params.correctAnswer."
+    ],
+    "deeplink_prompt": [
+        "Youpi! Je vous prépare quelques questions."
+    ],
+    "disagree_prompts": [
+        "Vous n'êtes pas d'accord? J'ai vérifié à nouveau et la réponse est juste. Désolée!",
+        "Oups! On dirait que vous n'êtes pas d'accord, mais ça me semble juste. Désolée!"
+    ],
+    "end_prompts": [
+        "D'accord, votre pointage était de $session.params.correctCount sur $session.params.questionsPerGame. Au revoir!"
+    ],
+    "fallback_prompt_1": [
+        "Vous avez terminé?",
+        "Vous avez terminé de jouer?",
+        "Hé! Vous avez fini?"
+    ],
+    "fallback_prompt_2": [
+        "Oh non! J'ai toujours de la difficulté, donc je pense que nous ferions mieux d'arrêter. Jouons encore très bientôt."
+    ],
+    "feeling_lucky_prompts": [
+        "Super! Je choisis au hasard une réponse pour vous."
+    ],
+    "final_round_prompts": [
+        "C'est triste à dire, mais voici la dernière question.",
+        "La dernière question s'en vient.",
+        "Voici la toute dernière question.",
+        "Je n'ai plus qu'une seule question. Snif!",
+        "Déjà la dernière question? C'est parti."
+    ],
+    "first_round_prompts": [
+        "Inspirez profondément. Voici votre première question.",
+        "Voici votre première question.",
+        "La première question s'en vient."
+    ],
+    "forced_selection_prompts": [
+        "Allons-y avec $session.params.category à $session.params.difficulty."
+    ],
+    "game_over_prompts_1": [
+        "Et c'est la fin de la partie.",
+        "J'imagine que c'est fini.",
+        "C'était la dernière partie, alors notre jeu est terminé.",
+        "Le jeu est terminé."
+    ],
+    "game_over_prompts_2": [
+        "Maintenant, évaluons vos réponses.",
+        "D'accord, voici votre pointage.",
+        "Voici vos résultats."
+    ],
+    "greeting_prompts_1": [
+        "Salut! C'est l'heure de jouer à $session.params.title!",
+        "Super! Je suis enchantée de jouer à $session.params.title avec vous aujourd'hui!"
+    ],
+    "greeting_prompts_2": [
+        "Bonjour!  Rejouons à $session.params.title!",
+        "Je suis ravie que vous reveniez jouer à $session.params.title!",
+        "Hé! Vous êtes de retour pour jouer à $session.params.title.",
+        "Jouons encore à $session.params.title!"
+    ],
+    "help_prompts": [
+        "D'accord, vous voulez obtenir de l'aide. Dans ce jeu, je vais vous poser $session.params.questionsPerGame questions à choix multiple. Vous pouvez dire la réponse, ou seulement le numéro de la réponse, par exemple, un, deux ou trois. Vous pouvez également commencer un nouveau jeu, arrêter le jeu en cours ou même me demander de répéter la question. Vous voulez continuer à jouer?"
+    ],
+    "hint_prompts": [
+        "Désolée, je ne peux pas vous donner d'indices. Mais vous n'en avez pas besoin de toute façon. Vous êtes incroyable à ce jeu! Essayons de nouveau.",
+        "Désolée, donner des indices est contraire aux règles. Revoici la question.",
+        "J'aimerais pouvoir vous donner un indice, mais je ne peux pas. Faites un autre essai."
+    ],
+    "introduction_prompts": [
+        "À vos marques. Prêt? Jouons!",
+        "Hourra, allons-y!",
+        "Commençons!",
+        "D'accord. Commençons à jouer."
+    ],
+    "last_category_difficulty_prompt": [
+        "Voici les derniers parmi lesquels choisir."
+    ],
+    "lets_play_prompts": [
+        "D'accord. Commençons tout de suite.",
+        "Prêt, pas prêt, le jeu commence.",
+        "J'espère que vous sentez que c'est votre jour de chance.",
+        "Commençons.",
+        "Je suis ravie que vous soyez là! Allons-y.",
+        "D'accord. Commençons à jouer.",
+        "Le jeu commence, MAINTENANT.",
+        "C'est parti.",
+        "C'est l'heure de jouer."
+    ],
+    "misc_prompts_false": [
+        "faux"
+    ],
+    "misc_prompts_more": [
+        "Plus"
+    ],
+    "misc_prompts_no": [
+        "Non"
+    ],
+    "misc_prompts_or": [
+        "ou"
+    ],
+    "misc_prompts_play_again": [
+        "Rejouer"
+    ],
+    "misc_prompts_stop_playing": [
+        "Arrêter de jouer"
+    ],
+    "misc_prompts_true": [
+        "vrai"
+    ],
+    "misc_prompts_yes": [
+        "Oui"
+    ],
+    "next_question_prompts": [
+        "D'accord, question suivante.",
+        "Maintenant, essayez celle-ci",
+        "Essayez celle-ci.",
+        "En voici une bonne.",
+        "Une autre pour vous."
+    ],
+    "no_input_prompts": [
+        "Aucune entrée détectée.",
+        "Aucun humain n'a répondu.",
+        "La séquence de jeu est terminée jusqu'à ce qu'elle soit relancée."
+    ],
+    "no_input_prompts_1": [
+        "Aucune entrée détectée."
+    ],
+    "no_input_prompts_2": [
+        "Aucun humain n'a répondu."
+    ],
+    "no_input_prompts_3": [
+        "La séquence de jeu est terminée jusqu'à ce qu'elle soit relancée."
+    ],
+    "none_correct_prompts": [
+        "Oh zut! Vous n'en avez eu aucune, mais ne vous inquiétez pas. Les questions étaient très difficiles.",
+        "Oh non! Aucune bonne réponse cette fois, que c'est triste. La prochaine partie sera meilleure, j'en suis certaine.",
+        "Serait-ce vrai? Vous les avez toutes manquées. Mais vous êtes fantastique à ce jeu!",
+        "Je ne peux pas vous mentir. Aucune bonne réponse! Mais, aucune! Pas facile, cette partie!"
+    ],
+    "play_again_category_difficulty": [
+        "Voulez-vous jouer à $session.params.category $session.params.difficulty encore une fois? Ou voulez-vous changer de jeu?"
+    ],
+    "play_again_question_prompts": [
+        "Vous savez que vous avez encore envie de jouer. S'il vous plaît?",
+        "Jouons encore. Dites oui, dites oui!",
+        "Pouvons-nous jouer encore? Allez, s'il vous plaît!"
+    ],
+    "question_prompts": [
+        "À vos marques, prêt, partez! C'est ici que ça se passe.",
+        "Essayez celle-ci.",
+        "En voici une bonne.",
+        "Et c'est parti…",
+        "Vous avez compris."
+    ],
+    "questions_count_prompts": [
+        "J'ai $session.params.questionsPerGame questions pour vous.",
+        "$session.params.questionsPerGame questions arrivent!"
+    ],
+    "quit_prompts": [
+        "J'ai eu beaucoup de plaisir! J'espère que vous en avez eu autant que moi! Au revoir!",
+        "Merci d'avoir joué! Revenez bientôt!",
+        "Au revoir! J'espère que nous pourrons rejouer bientôt!"
+    ],
+    "rapid_reprompts": [
+        "Répétez, s'il vous plaît.",
+        "Encore une fois s'il vous plaît.",
+        "Pardon?"
+    ],
+    "re_prompt": [
+        "Impressionnant!",
+        "Fantastique!",
+        "Super!",
+        "Youpi!"
+    ],
+    "repeat_prompts": [
+        "Certainement.",
+        "Ouais."
+    ],
+    "restart_confirmation": [
+        "Voulez-vous recommencer?",
+        "Devrions-nous recommencer?",
+        "Nous recommençons du début?"
+    ],
+    "restart_yes": [
+        "D'accord. On repart du début.",
+        "D'accord. On recommence depuis le début.",
+        "D'accord, on le refait."
+    ],
+    "right_answer_prompts_1": [
+        "Bravo! C'est ça!",
+        "Bon travail, vous l'avez eue!",
+        "Bon travail!",
+        "Bravo, vous êtes incroyable!",
+        "C'était plus que très bien.",
+        "Oui, c'est ça.",
+        "Vous avez réussi, quel esprit vif vous avez!",
+        "C'est exact. Regardez-vous aller!",
+        "Vous êtes une machine à bonnes réponses!",
+        "Un jour, vous pourriez vous tromper, mais pas aujourd'hui!",
+        "Vous l'avez! Trop facile!",
+        "Avec vous, ça a l'air tellement facile! Bonne réponse.",
+        "Ouais, c'est ça!",
+        "Vous avez raison!",
+        "C'est tellement la bonne réponse.",
+        "C'est ce que j'appelle une bonne réponse.",
+        "Mon petit doigt me dit que vous avez la bonne réponse."
+    ],
+    "right_answer_prompts_2": [
+        "C'est $session.params.correctAnswer!",
+        "C'est $session.params.correctAnswer!"
+    ],
+    "round_prompts": [
+        "La question $session.params.questionNumber s'en vient.",
+        "Voici la question $session.params.questionNumber.",
+        "Question numéro $session.params.questionNumber.",
+        "Voici la question $session.params.questionNumber."
+    ],
+    "say_number_prompts": [
+        "Il vous suffit de dire le numéro de la réponse."
+    ],
+    "selection_confirmation_prompts": [
+        "$session.params.selection est votre choix."
+    ],
+    "skip_prompts": [
+        "Bien sûr, passons à autre chose.",
+        "Prochaine question à venir!",
+        "Pas de soucis.",
+        "Pas de trouble!",
+        "Essayons la prochaine.",
+        "Parfait.",
+        "D'accord, sautons celle-ci."
+    ],
+    "some_correct_prompts": [
+        "C'était plutôt bien! Vous avez eu $session.params.correctCount bonnes réponses. Félicitations!",
+        "Vous avez $session.params.correctCount bonnes réponses. Bon travail! La prochaine fois, vous ferez encore mieux.",
+        "Beau travail! Cette fois-ci, vous avez eu $session.params.correctCount bonnes réponses. La prochaine fois, vous en aurez encore plus!"
+    ],
+    "stop_prompts": [
+        "Je pourrais jouer pour l'éternité, mais si vous avez terminé, dites simplement « Arrêter ».",
+        "J'espère que vous continuerez à jouer, mais si vous voulez arrêter, dites « Arrêter ».",
+        "Je serai triste si vous arrêtez de jouer, mais si vous en avez assez, dites simplement « Arrêter »."
+    ],
+    "switch_prompts": [
+        "Changeons de jeu!"
+    ],
+    "true_false_prompts": [
+        "vrai ou faux : $session.params.currentQuestion"
+    ],
+    "wrong_answer_for_question_promp": [
+        "Pas cette fois-ci, mais souvenez-vous-en plus tard."
+    ],
+    "wrong_answer_prompts_1": [
+        "Zut! Vous ne l'avez pas eue.",
+        "Si proche! Mais vous ne l'avez pas eue!",
+        "Oh, pas tout à fait.",
+        "Désolée, ce n'était pas ça.",
+        "Vous l'avez presque devinée.",
+        "Désolée, pas tout à fait juste.",
+        "Non, ce n'est pas ça.",
+        "Vous l'aviez presque.",
+        "Vous aviez presque la bonne réponse.",
+        "Oups! Ce n'était pas tout à fait juste.",
+        "Ah non. Pas vraiment.",
+        "C'était trop dur. Désolée.",
+        "Désolée, vous ne l'avez pas.",
+        "Bonne idée, mais non. Désolée."
+    ],
+    "wrong_answer_prompts_2": [
+        "La bonne réponse est $session.params.correctAnswer.",
+        "En fait, c'est $session.params.correctAnswer.",
+        "La réponse que je cherchais était $session.params.correctAnswer.",
+        "J'aurais aimé que vous disiez $session.params.correctAnswer.",
+        "La réponse que je voulais entendre était $session.params.correctAnswer.",
+        "C'est $session.params.correctAnswer. Meilleure chance la prochaine fois."
+    ],
+    "your_score_prompts": [
+        "On dirait que votre pointage est $session.params.correctCount.",
+        "Votre pointage est $session.params.correctCount."
+    ]
+  }
+}

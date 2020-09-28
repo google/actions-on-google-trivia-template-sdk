@@ -1,0 +1,50 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+handlers:
+- name: QUIT_YES
+- name: RESTART_REPEAT
+- name: QUESTION_REPEAT
+- name: QUIT_REPEAT
+- name: GENERIC_NO_MATCH_1
+- name: GENERIC_NO_MATCH_2
+- name: GENERIC_NO_MATCH_MAX
+- name: GENERIC_NO_INPUT_1
+- name: GENERIC_NO_INPUT_2
+- name: GENERIC_NO_INPUT_MAX
+- name: ANSWER_SKIP
+- name: ANSWER
+- name: PLAY_AGAIN_REPEAT
+- name: PLAY_AGAIN_YES
+- name: PLAY_AGAIN_NO
+- name: ANSWER_ORDINAL
+- name: RESTART_CONFIRMATION
+- name: QUIT_CONFIRMATION
+- name: RESTART_YES
+- name: RESTART_NO
+- name: SET_CATEGORY
+- name: SET_DIFFICULTY
+- name: SETUP_QUIZ
+- name: PROMPT_CATEGORY
+- name: PROMPT_DIFFICULTY
+- name: QUIT_NO
+- name: ASK_QUESTION
+- name: GIVE_SCORE
+- name: ROUND_END
+- name: ANSWER_HELP
+- name: ASK_PLAY_AGAIN
+- name: FINALIZE_SETUP
+- name: WELCOME
+httpsEndpoint:
+  baseUrl: webhookURL/triviaQuiz_v1
+  endpointApiVersion: 2

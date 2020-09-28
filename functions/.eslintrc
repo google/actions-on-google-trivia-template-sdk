@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["promise"],
+  "extends": [
+    "google",
+    "plugin:promise/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "max-len": ["error", {"code": 100, "ignoreUrls": true}]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.spec.js"],
+      "rules": {
+        "promise/always-return": "off",
+        "require-jsdoc": "off",
+        "max-len": ["error", {"code": 120, "ignoreUrls": true}]
+      }
+    }
+  ]
+}

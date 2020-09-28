@@ -1,0 +1,255 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+all_correct_prompts:
+- Now that's the way to play trivia! you got all $session.params.correctCount
+  right. Yay, you!
+- You're my new hero. You got $session.params.correctCount right. That's every
+  single one!
+- Do you love trivia as much as I do? You must, because you got them all right! That's
+  $session.params.correctCount questions answered exactly right. By you. My trivia
+  hero.
+- How many did you get right? Only all of them. All of them, as in $session.params.correctCount
+  right and zero wrong. Go you!
+correct_answer_only_prompts:
+- It was $session.params.correctAnswer.
+- The answer was $session.params.correctAnswer.
+deeplink_prompt:
+- Hooray! I'll get some questions ready.
+disagree_prompts:
+- You don't agree? I checked again and the answer is right. Sorry!
+- Uh-oh, looks like you disagree, but it looks right to me. Sorry!
+end_prompts:
+- OK, your score was $session.params.correctCount out of $session.params.questionsPerGame.
+  Bye!
+fallback_prompt_1:
+- All done?
+- Are you done playing?
+- Hey, are you all done?
+fallback_prompt_2:
+- Oh no! I'm still having trouble so I think we better stop. Let's play again soon!
+feeling_lucky_prompts:
+- 'Cool! I''m randomly choosing an answer for you. '
+final_round_prompts:
+- I hate to say it, but here's the last question.
+- Last question, on the way.
+- Here comes the last question.
+- Only one more question. Sniff.
+- Last question already? Here we go.
+first_round_prompts:
+- Deep breath. Here's your first question.
+- Here comes your first question.
+- First question is coming your way.
+forced_selection_prompts:
+- Let's go with $session.params.category at $session.params.difficulty.
+game_over_prompts_1:
+- And that's the end of the game.
+- I guess that's the end.
+- That was the last one, so our game is over.
+- That's the end of this game.
+game_over_prompts_2:
+- Now let's see how well you did.
+- Okay, it's time for your score.
+- Here's how you did.
+greeting_prompts_1:
+- Hi! It's time for $session.params.title!
+- Yay! I'm so excited to play $session.params.title with you today!
+greeting_prompts_2:
+- Hi there!  Let's play $session.params.title again!
+- So glad you came back to play $session.params.title!
+- Hey there, welcome back to $session.params.title.
+- Let's play some more $session.params.title!
+help_prompts:
+- OK, here's some help. In this game, I'm gonna ask you $session.params.questionsPerGame
+  multiple choice questions. You can say the answer, or just the number of the answer,
+  like one, two, or three. You can also start a new game, stop the current game or
+  even ask me to repeat  the question. Wanna keep playing?
+hint_prompts:
+- Sorry, I can't give you a hint. But you don't need one anyway. You're so good at
+  this! Let's try again.
+- Sorry, hints are against the rules. Here's the question again.
+- I wish I could give you a hint, but I can't. Give it another try.
+introduction_prompts:
+- Ready? Let's play!
+- Hooray, here we go!
+- Let's get started.
+- OK. Let's get things started.
+last_category_difficulty_prompt:
+- Here are the last to pick from.
+lets_play_prompts:
+- OK. Let's get things started.
+- Ready or not, the game is starting.
+- Hope you're feeling lucky.
+- Let's begin.
+- I'm excited that you're here! Let's do this.
+- OK. Let's play.
+- The game starts, NOW.
+- Here we go.
+- Time to play.
+misc_prompts_false:
+- "False"
+misc_prompts_more:
+- more
+misc_prompts_no:
+- "No"
+misc_prompts_or:
+- or
+misc_prompts_play_again:
+- Play again
+misc_prompts_stop_playing:
+- Stop playing
+misc_prompts_true:
+- "True"
+misc_prompts_yes:
+- "Yes"
+next_question_prompts:
+- OK, next question.
+- Next up, try this one.
+- Give this one a try.
+- Here's a good one.
+- One more for you.
+no_input_prompts:
+- No input detected.
+- Humans not responding.
+- Game sequence complete until reinitiated.
+no_input_prompts_1:
+- No input detected.
+no_input_prompts_2:
+- Humans not responding.
+no_input_prompts_3:
+- Game sequence complete until reinitiated.
+none_correct_prompts:
+- Oh phooey! You didn't get any of them right, but don't worry. These were tough questions!
+- Oh man! None right this time, and that stinks. Next game will be better, I'm sure
+  of it!
+- Can it be true? You missed all of them. But you're so good at this!
+- I can't lie. None right, none at all. That was a tough one, my friend.
+play_again_category_difficulty:
+- Do you want to play $session.params.category $session.params.difficulty
+  again? Or switch it up?
+play_again_question_prompts:
+- You know you want play again. Please?
+- Let's play again. Whadda you say?
+- Can we play again, pretty please?
+question_prompts:
+- Get ready, get set, because here it is.
+- Try this one.
+- Here's a good one.
+- Here we go..
+- You got this.
+questions_count_prompts:
+- I have $session.params.questionsPerGame questions for you.
+- $session.params.questionsPerGame questions, coming up!
+quit_prompts:
+- I had so much fun! Hope you did too! Bye!
+- Thanks for playing! Come back again soon!
+- Bye! Hope we can play again soon!
+rapid_reprompts:
+- Say that again please.
+- Once more please.
+- Pardon?
+re_prompt:
+- Awesome!
+- Fantastic!
+- Super-duper!
+- Woo hoo!
+repeat_prompts:
+- Sure thing.
+- Yep.
+restart_confirmation:
+- Do you want to start over?
+- Should we restart?
+- Do you want to start all over?
+restart_yes:
+- Ok. Let's start over.
+- Ok. We'll start over.
+- Ok, lets do it again.
+right_answer_prompts_1:
+- Yay! You got it!
+- Good job, you got it!
+- Good work!
+- Yay, you!
+- That was extra right.
+- Yes, that's it.
+- You got it, smarty pants!
+- That's right. Look at you go!
+- You are a right answer machine!
+- You might be wrong someday, but not this time!
+- You got it. Easy peasy.
+- You're making this look easy. Right answer.
+- Yup, that's it.
+- You're right.
+- That was so right.
+- I call that a right answer.
+- I spy a right answer.
+right_answer_prompts_2:
+- It is $session.params.correctAnswer!
+- It's $session.params.correctAnswer!
+round_prompts:
+- Question $session.params.questionNumber is coming up.
+- Here comes question $session.params.questionNumber.
+- Question number $session.params.questionNumber.
+- Question $session.params.questionNumber goes like this.
+say_number_prompts:
+- Just say the number of the answer.
+selection_confirmation_prompts:
+- $session.params.selection it is.
+skip_prompts:
+- Sure, moving on.
+- Next one coming up!
+- No worries.
+- Sure thing!
+- Let's try the next one.
+- All right.
+- OK, skipping that one.
+some_correct_prompts:
+- That was pretty good! You got $session.params.correctCount right. Way to go!
+- You got $session.params.correctCount right. Good work! Next time you'll do
+  even better.
+- Nice work, my friend! You got $session.params.correctCount right this time.
+  Next time, you'll get even more!
+stop_prompts:
+- I could keep playing forever, but if you're done, just say stop.
+- I hope you keep playing, but if you want to quit early, say stop.
+- I'll be sad if you stop playing, but if you need to, just say stop.
+switch_prompts:
+- Let's switch it up!
+true_false_prompts:
+- 'true or false: $session.params.currentQuestion'
+wrong_answer_for_question_promp:
+- Not for this one, but remember that for later.
+wrong_answer_prompts_1:
+- Oh shoot, you missed it.
+- So close! But you missed it.
+- Awww, not quite.
+- Sorry, that wasn't it.
+- You just missed that one.
+- Sorry, not quite right.
+- Nope, that's not it.
+- You almost had it.
+- You nearly got it.
+- Oops,  that wasn't quite right.
+- Well, no. Not exactly.
+- That was too tough. Sorry.
+- Sorry, you missed it.
+- Good guess, but no. Sorry.
+wrong_answer_prompts_2:
+- The right answer is $session.params.correctAnswer.
+- Actually, it's $session.params.correctAnswer.
+- I was looking for $session.params.correctAnswer.
+- I wish you had said $session.params.correctAnswer.
+- The answer I wanted was $session.params.correctAnswer.
+- It's $session.params.correctAnswer. Better luck next time.
+your_score_prompts:
+- Looks like your score is $session.params.correctCount.
+- Your score is $session.params.correctCount.

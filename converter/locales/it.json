@@ -1,0 +1,538 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "Help": {
+      "trainingPhrases": [
+        "come faccio a giocare a questo gioco",
+        "come giocare?",
+        "aiuto per favore",
+        "aiuto",
+        "come si gioca?",
+        "cosa dovrei fare?",
+        "cosa devo fare?",
+        "come funziona questo gioco?",
+        "come si fa questo gioco?",
+        "cosa faccio ora?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "no ti ringrazio",
+        "No",
+        "ciao",
+        "arrivederci",
+        "di certo no",
+        "non voglio",
+        "a posto così",
+        "non mi va",
+        "negativo"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "può essere ($count 'la seconda' auto=false)",
+        "potrebbe essere ($count 'la prima' auto=true)",
+        "potrebbe essere ($count 'la seconda' auto=true)",
+        "forse ($count 'la prima' auto=true)",
+        "può essere ($count 'la prima' auto=false)",
+        "è ($count 'la prima' auto=false)",
+        "è ($count 'la seconda' auto=false)",
+        "magari ($count 'la prima' auto=true)",
+        "forse ($count 'la seconda' auto=true)",
+        "magari ($count 'la seconda' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "aiuto",
+        "come si gioca?",
+        "cosa dovrei fare?",
+        "cosa devo fare?",
+        "come funziona questo gioco?",
+        "come si fa questo gioco?",
+        "cosa faccio ora?"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "non ho capito",
+        "ripeti",
+        "dillo ancora",
+        "puoi ripetere?",
+        "dillo di nuovo",
+        "non l'ho capito",
+        "non ho capito cosa hai detto",
+        "dillo nuovamente",
+        "non ho sentito quello che hai detto",
+        "non ho capito quello che hai detto",
+        "potresti ripeterlo?",
+        "ridillo",
+        "potresti ripetere?",
+        "non l'ho sentito",
+        "non ho sentito cosa hai detto",
+        "non ho sentito",
+        "ripeti per favore",
+        "ripetilo",
+        "puoi ripeterlo?"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Gioca ancora",
+        "facciamo ancora il gioco",
+        "ricomincia",
+        "gioca di nuovo",
+        "ricominciamo il gioco",
+        "rinizia",
+        "giochiamo di nuovo",
+        "riniziamo il gioco",
+        "rinizia il gioco",
+        "reimposta",
+        "ricomincia il gioco",
+        "giochiamo ancora",
+        "facciamo di nuovo il gioco",
+        "riavvia il gioco",
+        "gioca nuovamente"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "altra domanda",
+        "salta questa domanda",
+        "salta questa",
+        "lascia perdere questa domanda",
+        "passa oltre questa domanda",
+        "ignora questa domanda",
+        "ignora questa",
+        "prossima domanda",
+        "supera questa domanda",
+        "domanda successiva",
+        "lascia perdere questa",
+        "vai oltre questa domanda"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Avvia",
+        "Ok, giochiamo",
+        "perfetto, giochiamo",
+        "cominciamo",
+        "iniziamo",
+        "andiamo",
+        "non vedo l'ora",
+        "forza, giochiamo",
+        "vai"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "perfetto",
+        "perché no",
+        "va bene",
+        "OK",
+        "d'accordo",
+        "Sì",
+        "ovvio",
+        "sicuramente",
+        "certo",
+        "certo che sì",
+        "davvero",
+        "senz'altro",
+        "di sicuro",
+        "probabilmente",
+        "assolutamente sì",
+        "certamente"
+      ]
+    },
+    "Score": {
+      "trainingPhrases": [
+        "com'è la classifica?",
+        "posizionamento",
+        "chi è il vincitore?",
+        "chi ha vinto?",
+        "quanti sono i punti?",
+        "qual è la classifica?",
+        "voglio sapere il punteggio",
+        "come vado?",
+        "come sto andando?",
+        "punteggio?",
+        "dammi il punteggio",
+        "posizione",
+        "quanti punti ho fatto?",
+        "chi è che ha vinto?",
+        "sto per perdere?",
+        "chi vince",
+        "vado bene?",
+        "i punti?",
+        "qual è il mio punteggio?",
+        "voglio la classifica",
+        "com'è il punteggio?",
+        "chi è che vince",
+        "dimmi il punteggio attuale",
+        "vorrei il punteggio",
+        "chi perde",
+        "vado male?",
+        "qual è il punteggio?",
+        "classifica",
+        "dimmi il punteggio corrente",
+        "chi sta vincendo",
+        "chi è che perde",
+        "mi dici il punteggio attuale?",
+        "dammi la classifica",
+        "chi sta perdendo",
+        "mi dici il punteggio?",
+        "quanti punti ho?",
+        "come me la cavo?",
+        "sto per vincere?",
+        "dimmi il punteggio",
+        "punti?",
+        "sto perdendo?",
+        "sto vincendo?"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "la uno",
+              "la numero uno",
+              "prima",
+              "la prima"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "seconda",
+              "la due",
+              "la seconda",
+              "la numero due"
+            ]
+          },
+          "third": {
+            "synonyms": [
+              "terzo",
+              "scorso",
+              "infine",
+              "in terzo luogo",
+              "tre",
+              "il terzo",
+              "l'ultimo"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "Esempio di Trivia Quiz",
+      "fullDescription": "Esempio di Trivia Quiz",
+      "pronunciation": "Esempio di Trivia Quiz",
+      "sampleInvocations": [
+        "Parla con Esempio di Trivia Quiz"
+      ],
+      "shortDescription": "Esempio di Trivia Quiz",
+      "voice": "female_1"
+    }
+  },
+  "strings": {
+    "all_correct_prompts": [
+        "Nah, begitulah cara bermain trivia! Semua $session.params.correctCount jawaban benar. Yay!",
+        "Anda jagoan. Ada $session.params.correctCount jawaban benar. Artinya, semua benar!",
+        "Suka main trivia? Pastinya, karena jawaban Anda benar semua! $session.params.correctCount pertanyaan dijawab dengan tepat.  ",
+        "Berapa banyak yang dijawab dengan benar? Semuanya! $session.params.correctCount benar dan tidak ada yang salah. Ayo lanjutkan!"
+    ],
+    "correct_answer_only_prompts": [
+        "$session.params.correctAnswer.",
+        "Jawabannya $session.params.correctAnswer."
+    ],
+    "deeplink_prompt": [
+        "Hore! Saya akan siapkan pertanyaannya."
+    ],
+    "disagree_prompts": [
+        "Nggak setuju? Setelah diperiksa lagi ternyata jawabannya benar. Maaf!",
+        "Eh, nggak setuju? tapi menurut saya jawabannya benar. Maaf!"
+    ],
+    "end_prompts": [
+        "Oke, skor Anda $session.params.correctCount dari $session.params.questionsPerGame. Bye!"
+    ],
+    "fallback_prompt_1": [
+        "Sudah selesai?",
+        "Sudah selesai mainnya?",
+        "Sudah selesai main?"
+    ],
+    "fallback_prompt_2": [
+        "Astaga! Maaf, ada masalah, jadi lebih baik kita berhenti dulu. Nanti kita main lagi!"
+    ],
+    "feeling_lucky_prompts": [
+        "Saya pilih jawaban acak untuk Anda."
+    ],
+    "final_round_prompts": [
+        "Pertanyaan terakhir!",
+        "Pertanyaan terakhir, segera.",
+        "Ini dia pertanyaan terakhir.",
+        "Tinggal satu pertanyaan lagi. Hiks.",
+        "Sudah siap untuk pertanyaan terakhir? Ini dia."
+    ],
+    "first_round_prompts": [
+        "Tarik napas. Ini pertanyaan pertama.",
+        "Ini dia pertanyaan pertama.",
+        "Pertanyaan pertama sebentar lagi."
+    ],
+    "forced_selection_prompts": [
+        "Ayo lanjut dengan $session.params.category di $session.params.difficulty."
+    ],
+    "game_over_prompts_1": [
+        "Game ini sudah selesai.",
+        "Sudah selesai.",
+        "Itu yang terakhir, jadi game kita selesai.",
+        "Game ini sudah berakhir."
+    ],
+    "game_over_prompts_2": [
+        "Ayo kita lihat hasilnya.",
+        "Oke, ini saatnya untuk melihat skor.",
+        "Ini dia skornya."
+    ],
+    "greeting_prompts_1": [
+        "Hai! Waktunya $session.params.title!",
+        "Hore! Senang sekali kita bisa main $session.params.title hari ini!"
+    ],
+    "greeting_prompts_2": [
+        "Halo!  Ayo kita main $session.params.title lagi!",
+        "Senang sekali Anda main $session.params.title lagi!",
+        "Halo, selamat datang kembali di $session.params.title.",
+        "Ayo kita main $session.params.title lagi!"
+    ],
+    "help_prompts": [
+        "Oke, ini sedikit petunjuk. Dalam game ini, saya akan tanya $session.params.questionsPerGame pertanyaan pilihan ganda. Anda bisa ucapkan jawabannya, atau nomor jawabannya saja, misalnya satu, dua, atau tiga. Anda juga bisa mulai game baru, stop game yang lagi dimainkan, atau bahkan minta diulangi pertanyaannya. Mau terus main?"
+    ],
+    "hint_prompts": [
+        "Maaf, saya nggak bisa kasih petunjuk. Tapi memang nggak perlu petunjuk kan. Anda sudah hebat soal ini! Ayo kita coba lagi.",
+        "Maaf, aturannya nggak boleh ada petunjuk. Saya ulangi lagi pertanyaannya ya.",
+        "Seandainya saya bisa kasih petunjuk. Ayo coba lagi."
+    ],
+    "introduction_prompts": [
+        "Siap? Ayo kita main!",
+        "Hore, mulai!",
+        "Ayo kita mulai.",
+        "Oke. Ayo kita mulai."
+    ],
+    "last_category_difficulty_prompt": [
+        "Ini dia pilihan terakhir"
+    ],
+    "lets_play_prompts": [
+        "Oke. Ayo kita mulai.",
+        "Siap atau tidak, game sudah dimulai.",
+        "Semoga beruntung.",
+        "Ayo kita mulai.",
+        "Saya senang Anda bermain! Ayo mainkan game ini.",
+        "Oke. Ayo kita main.",
+        "Game dimulai, SEKARANG.",
+        "Kita mulai.",
+        "Waktunya bermain."
+    ],
+    "misc_prompts_false": [
+        "salah"
+    ],
+    "misc_prompts_more": [
+        "Lainnya"
+    ],
+    "misc_prompts_no": [
+        "Tidak"
+    ],
+    "misc_prompts_or": [
+        "atau"
+    ],
+    "misc_prompts_play_again": [
+        "Main lagi"
+    ],
+    "misc_prompts_stop_playing": [
+        "Stop main"
+    ],
+    "misc_prompts_true": [
+        "Benar"
+    ],
+    "misc_prompts_yes": [
+        "Ya"
+    ],
+    "next_question_prompts": [
+        "Oke, pertanyaan berikutnya.",
+        "Berikutnya, coba yang satu ini.",
+        "Coba yang satu ini.",
+        "Ini pertanyaan bagus.",
+        "Satu lagi pertanyaan."
+    ],
+    "no_input_prompts": [
+        "Tidak ada input terdeteksi.",
+        "Pengguna tidak merespons.",
+        "Urutan game selesai sampai dimulai ulang."
+    ],
+    "no_input_prompts_1": [
+        "Tidak ada input terdeteksi."
+    ],
+    "no_input_prompts_2": [
+        "Pengguna tidak merespons."
+    ],
+    "no_input_prompts_3": [
+        "Urutan game selesai sampai dimulai ulang."
+    ],
+    "none_correct_prompts": [
+        "Yah. Jawabannya nggak ada yang benar, tapi jangan khawatir. Pertanyaannya memang sulit!",
+        "Astaga! Nggak ada yang benar kali ini. Saya yakin lain kali lebih baik!",
+        "Masa iya? Salah semua. Tapi Anda hebat kok!",
+        "Saya nggak bisa bohong. Nggak ada yang bener satu pun. Tadi itu memang sulit, kok."
+    ],
+    "play_again_category_difficulty": [
+        "Mau main $session.params.category $session.params.difficulty lagi? Atau ditukar?"
+    ],
+    "play_again_question_prompts": [
+        "Anda mau main lagi? Ayo",
+        "Ayo kita main lagi. Mau?",
+        "Kita bisa main lagi nggak?"
+    ],
+    "question_prompts": [
+        "Siap-siap, mulai.",
+        "Coba yang ini.",
+        "Ini pertanyaan bagus.",
+        "Kita mulai...",
+        "Anda pasti bisa."
+    ],
+    "questions_count_prompts": [
+        "Saya punya $session.params.questionsPerGame pertanyaan untuk Anda.",
+        "$session.params.questionsPerGame pertanyaan, segera!"
+    ],
+    "quit_prompts": [
+        "Permainannya tadi menyenangkan ya! Semoga kamu juga senang! Dah!",
+        "Terima kasih sudah bermain! Cepat balik lagi ya!",
+        "Dah! Nanti kita main lagi ya!"
+    ],
+    "rapid_reprompts": [
+        "Tolong diulangi.",
+        "Tolong sekali lagi.",
+        "Maaf?"
+    ],
+    "re_prompt": [
+        "Keren!",
+        "Fantastis!",
+        "Super sekali!",
+        "Asyik!"
+    ],
+    "repeat_prompts": [
+        "Tentunya.",
+        "Ya."
+    ],
+    "restart_confirmation": [
+        "Apa Anda ingin mulai dari awal?",
+        "Apa kita ulang lagi?",
+        "Apa Anda ingin mulai dari awal?"
+    ],
+    "restart_yes": [
+        "Oke. Mari mulai dari awal.",
+        "Oke. Kita ulang dari awal.",
+        "Oke, mari kita lakukan lagi."
+    ],
+    "right_answer_prompts_1": [
+        "Hore! Anda benar!",
+        "Bagus, Anda benar!",
+        "Kerja bagus!",
+        "Yay!",
+        "Itu benar banget.",
+        "Ya, itu jawabannya.",
+        "Anda benar, pintar!",
+        "Benar! Ayo lanjutkan!",
+        "Anda sepertinya nggak pernah salah!",
+        "Kali ini Anda benar!",
+        "Oke, benar. Mudah sekali.",
+        "Game ini jadi terasa mudah. Jawabannya benar.",
+        "Yap, itu dia.",
+        "Anda benar.",
+        "Benar banget.",
+        "Itu namanya jawaban yang benar.",
+        "Jawabannya benar."
+    ],
+    "right_answer_prompts_2": [
+        "Jawabannya $session.params.correctAnswer!",
+        "Jawabannya $session.params.correctAnswer $!"
+    ],
+    "round_prompts": [
+        "Berikutnya, pertanyaan nomor $session.params.questionNumber.",
+        "Ini dia pertanyaan nomor $session.params.questionNumber.",
+        "Pertanyaan nomor $session.params.questionNumber.",
+        "Pertanyaan nomor $session.params.questionNumber adalah seperti ini."
+    ],
+    "say_number_prompts": [
+        "Bilang saja ada berapa jumlah jawabannya."
+    ],
+    "selection_confirmation_prompts": [
+        "$session.params.selection itu dia."
+    ],
+    "skip_prompts": [
+        "Oke, kita lanjut ya.",
+        "Pertanyaan berikutnya!",
+        "Tidak masalah.",
+        "Tentunya!",
+        "Ayo kita coba yang berikutnya.",
+        "Oke.",
+        "Oke, kita lewati pertanyaan ini."
+    ],
+    "some_correct_prompts": [
+        "Lumayan juga! Ada $session.params.correctCount jawaban benar. Bagus!",
+        "Ada $session.params.correctCount jawaban benar. Selamat! Lain kali pasti lebih bagus lagi.",
+        "Selamat! Kali ini jawaban Anda benar $session.params.correctCount. Lain kali, pasti lebih bagus lagi!"
+    ],
+    "stop_prompts": [
+        "Saya bisa terus main game, tapi kalau Anda ingin berhenti, tinggal bilang stop.",
+        "Saya sih maunya main game terus, tapi kalau Anda sudah mau berhenti, tinggal bilang stop.",
+        "Saya sedih kalau kita berhenti main game, tapi kalau memang harus, tinggal bilang stop."
+    ],
+    "switch_prompts": [
+        "Ayo kita tukar!"
+    ],
+    "true_false_prompts": [
+        "benar atau salah: $session.params.currentQuestion"
+    ],
+    "wrong_answer_for_question_promp": [
+        "Belum tepat, tapi mungkin itu jawaban untuk pertanyaan lain."
+    ],
+    "wrong_answer_prompts_1": [
+        "Yah, salah.",
+        "Nyaris! Tapi masih salah.",
+        "Awww, kurang tepat.",
+        "Maaf, bukan itu.",
+        "Jawaban Anda salah kali ini.",
+        "Maaf, belum tepat.",
+        "Bukan itu.",
+        "Jawaban Anda nyaris benar.",
+        "Jawaban Anda hampir benar.",
+        "Ups, itu kurang tepat.",
+        "Bukan. Masih salah.",
+        "Pertanyaan tadi sangat sulit. Maaf.",
+        "Maaf, jawaban Anda salah.",
+        "Tebakan bagus, tapi bukan itu. Maaf."
+    ],
+    "wrong_answer_prompts_2": [
+        "Jawaban yang benar adalah $session.params.correctAnswer.",
+        "Jawabannya $session.params.correctAnswer.",
+        "Coba tadi jawab $session.params.correctAnswer.",
+        "Jawaban yang saya mau adalah $session.params.correctAnswer.",
+        "Jawabannya $session.params.correctAnswer. Semoga lain kali benar."
+    ],
+    "your_score_prompts": [
+        "Sepertinya skor Anda $session.params.correctCount.",
+        "Skor Anda adalah $session.params.correctCount."
+    ]
+  }
+}

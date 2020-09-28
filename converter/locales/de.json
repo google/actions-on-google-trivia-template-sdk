@@ -1,0 +1,565 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "Help": {
+      "trainingPhrases": [
+        "wie spielt man das Spiel?",
+        "was mache ich jetzt?",
+        "wie funktioniert das Spiel?",
+        "was soll ich tun?",
+        "was sollte ich tun?",
+        "wie funktioniert dieses Spiel?",
+        "helfen",
+        "was sollte ich jetzt tun?",
+        "wie spielt man dieses Spiel?",
+        "Hilf mir",
+        "Hilfe",
+        "was soll ich jetzt tun?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "ciao",
+        "sicherlich nicht",
+        "auf keinen Fall",
+        "nein danke",
+        "keinesfalls",
+        "nicht",
+        "tschüss",
+        "nein",
+        "negativ",
+        "ich möchte nicht spielen",
+        "ich bin bereit",
+        "sicher nicht",
+        "ich möchte nicht"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "könnte es die ($count 'zweite' auto=false) sein",
+        "was ist mit der ($count 'zweiten' auto=false)",
+        "wie ist es ist mit der ($count 'ersten' auto=false)",
+        "was ist mit der ($count 'ersten' auto=false)",
+        "Die ($count 'erste' auto=false) ist es",
+        "wie ist es ist mit der ($count 'ersten' auto=false)?",
+        "Es ist die ($count 'erste' auto=false)",
+        "Die ($count 'zweite' auto=false)",
+        "kann es die ($count 'zweite' auto=false) sein?",
+        "könnte es die ($count 'erste' auto=false) sein?",
+        "wie ist es ist mit der ($count 'zweiten' auto=false)?",
+        "vielleicht ist es die ($count 'zweite' auto=false)?",
+        "könnte es die ($count 'zweite' auto=false) sein?",
+        "vielleicht ist es die ($count 'erste' auto=false)?",
+        "kann es die ($count 'erste' auto=false) sein?",
+        "was ist mit der ($count 'ersten' auto=false)?",
+        "könnte es die ($count 'erste' auto=false) sein",
+        "Die ($count 'zweite' auto=false) ist es",
+        "wie ist es ist mit der ($count 'zweiten' auto=false)",
+        "Die ($count 'erste' auto=false)",
+        "Es ist die ($count 'zweite' auto=false)",
+        "kann es die ($count 'erste' auto=false) sein",
+        "was ist mit der ($count 'zweiten' auto=false)?",
+        "vielleicht ist es die ($count 'erste' auto=false)",
+        "vielleicht ist es die ($count 'zweite' auto=false)",
+        "kann es die ($count 'zweite' auto=false) sein"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "zu spielen aufhören",
+        "ich mit dem Spielen aufhören",
+        "schließen",
+        "mit Spielen aufhören",
+        "abbrechen",
+        "mit dem Spielen aufhören",
+        "ich möchte aufhören zu spielen",
+        "ich möchte nicht mehr spielen",
+        "beenden",
+        "aufhören"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "Ich habe es nicht gehört",
+        "sag es noch einmal",
+        "könntest du das bitte wiederholen?",
+        "Ich habe das nicht verstanden",
+        "noch einmal, bitte",
+        "bitte wiederhole das",
+        "Ich habe es nicht verstanden",
+        "kannst du das bitte wiederholen?",
+        "Wie bitte?",
+        "sag es noch mal",
+        "Ich habe es nicht gehört",
+        "sag es noch einmal",
+        "könntest du das bitte wiederholen?",
+        "Ich habe das nicht verstanden",
+        "könntest du das wiederholen?"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Erneut spielen",
+        "noch einmal spielen",
+        "noch mal spielen",
+        "Spiel neu initiieren",
+        "neu initiieren",
+        "Spiel neu starten",
+        "das Spiel noch einmal spielen",
+        "zurücksetzen",
+        "das Spiel noch mal spielen",
+        "neu starten",
+        "das Spiel wiederholen"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "diese Frage übergehen",
+        "diese überspringen",
+        "diese ignorieren",
+        "diese Frage auslassen",
+        "diese Frage überspringen",
+        "nächste Frage",
+        "diese Frage ignorieren",
+        "diese auslassen",
+        "diese übergehen"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Start",
+        "auf jeden Fall",
+        "ok, spielen wir",
+        "ok, jetzt ein Spiel",
+        "Ich kann nicht länger warten",
+        "ok, jetzt wird gespielt",
+        "Ich kann es nicht erwarten",
+        "los geht's"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "klar",
+        "sicher",
+        "weswegen nicht",
+        "warum nicht",
+        "weshalb nicht",
+        "okay",
+        "in Ordnung",
+        "Ja",
+        "auf jeden Fall",
+        "selbstverständlich",
+        "mit Sicherheit",
+        "vermutlich",
+        "ganz sicher",
+        "absolut",
+        "ok",
+        "natürlich",
+        "sicherlich",
+        "bestimmt",
+        "definitiv",
+        "ganz bestimmt",
+        "wahrscheinlich",
+        "voraussichtlich"
+      ]
+    },
+    "Score": {
+      "trainingPhrases": [
+        "verliere ich?",
+        "zeig mir die Rangliste",
+        "Punktzahl?",
+        "Rangliste",
+        "wie sieht der Spielstand aus?",
+        "wie gut bin ich?",
+        "wie läuft es?",
+        "wer gewinnt",
+        "zeig mir die Bestenliste",
+        "das Ranking",
+        "die Rangliste",
+        "wie ist mein Punktestand?",
+        "wer gewinnt?",
+        "wer ist der Gewinner?",
+        "Bestenliste",
+        "ich will den Spielstand sehen",
+        "wer verliert grade",
+        "sag mir den Punktestand",
+        "was ist meine Punktzahl?",
+        "wie ist grade der Spielstand",
+        "was ist die Punktzahl",
+        "gewinne ich?",
+        "was ist der Punktestand?",
+        "wie mache ich mich?",
+        "wer verliert",
+        "wie viel Punkte habe ich?",
+        "wer ist am Verlieren",
+        "wer ist am Gewinnen",
+        "bin ich am Gewinnen?",
+        "Punktestand?",
+        "sag mir den Spielstand",
+        "die Platzierung",
+        "bin ich am Verlieren?",
+        "Punkte?",
+        "was ist der aktuelle Stand?",
+        "bin ich der Gewinner?",
+        "bin ich der Verlierer?",
+        "wer hat gewonnen?",
+        "sag mir die aktuelle Punktzahl",
+        "Ranking",
+        "wer gewinnt grade",
+        "zeig mir die Punktzahl",
+        "wie ist der Punktestand",
+        "sag mir den aktuellen Punktestand"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "letzte",
+              "erste",
+              "letzter",
+              "letztes",
+              "erstes",
+              "vorherige",
+              "erster",
+              "ersten"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "zweites",
+              "zwei",
+              "zweite",
+              "zweiter",
+              "zweitens"
+            ]
+          },
+          "third": {
+            "synonyms": [
+              "dritte",
+              "zuletzt",
+              "zuletzt",
+              "drittens",
+              "drei",
+              "dritte",
+              "Letzter"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+   "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "Beispiel-Quiz",
+      "fullDescription": "Beispiel-Quiz",
+      "pronunciation": "Beispiel-Quiz",
+      "sampleInvocations": [
+        "Mit Beispiel-Quiz sprechen"
+      ],
+      "shortDescription": "Beispiel-Quiz",
+      "voice": "female_1"
+   }
+  },
+  "strings": {
+    "all_correct_prompts": [
+        "Wow, so sieht ein Quizprofi aus! Du hast alle $session.params.correctCount richtig beantwortet. Legendär!",
+        "Du hast mich echt umgehauen. Du hattest $session.params.correctCount richtig. Besser geht's also nicht.",
+        "Hast du wieder heimlich Quizsendungen geguckt? Sieht ganz danach aus, denn du hast alles richtig beantwortet! $session.params.correctCount Fragen wurden absolut richtig beantwortet. Von dir. Du Genie.",
+        "Wie viele hast du richtig beantwortet? Ach, nur jede einzelne. Das heißt $session.params.correctCount richtig und null falsch. Weiter so!"
+    ],
+    "correct_answer_only_prompts": [
+        "Es war $session.params.correctAnswer.",
+        "Die Antwort lautet $session.params.correctAnswer."
+    ],
+    "deeplink_prompt": [
+        "Juhu! Ich zauber gleich mal ein paar Fragen aus dem Hut."
+    ],
+    "disagree_prompts": [
+        "Das siehst du anders? Ich hab's wirklich zigmal überprüft, deine Antwort ist leider falsch. Tut mir leid!",
+        "Oje. Du siehst das anders? Ich hab's überprüft, das stimmt so. Tut mir echt leid!"
+    ],
+    "end_prompts": [
+        "Okay, deine Punktzahl war $session.params.correctCount von $session.params.questionsPerGame. Tschüss!"
+    ],
+    "fallback_prompt_1": [
+        "Schon genug?",
+        "Hast du genug gespielt?",
+        "Hey, keine Lust mehr?"
+    ],
+    "fallback_prompt_2": [
+        "Oh nein! Ich hab leider gerade einen kleinen Hänger und muss eine Pause einlegen. Lass uns aber bald wieder spielen!"
+    ],
+    "feeling_lucky_prompts": [
+        "Cool! Dann dreh ich mal am Glücksrad für dich."
+    ],
+    "final_round_prompts": [
+        "Leider kommt hier schon die letzte Frage.",
+        "Und hier ist schon die letzte Frage.",
+        "Und zu guter Letzt noch eine ganz besondere Frage.",
+        "Ich hab nur noch eine Frage. Leider.",
+        "Wir sind schon bei der letzten Frage? Auf geht's."
+    ],
+    "first_round_prompts": [
+        "Tief Luft holen. Hier ist deine erste Frage.",
+        "Hier kommt deine erste Frage.",
+        "Jetzt kommt die erste Frage für dich."
+    ],
+    "forced_selection_prompts": [
+        "Lass es uns mit $session.params.category bei $session.params.difficulty versuchen."
+    ],
+    "game_over_prompts_1": [
+        "Ich fürchte, jetzt ist Ende im Gelände.",
+        "Das war's dann wohl.",
+        "Das war jetzt schon die letzte Runde, das Spiel ist also vorbei.",
+        "Aus die Maus, das Spiel ist vorbei!"
+    ],
+    "game_over_prompts_2": [
+        "Na dann lass uns mal gucken, wie du dich angestellt hast.",
+        "Okay, jetzt kommt deine Punktzahl.",
+        "Hier ist dein Ergebnis."
+    ],
+    "greeting_prompts_1": [
+        "Hi! Zeit für $session.params.title!",
+        "Juhu! Ich bin heute in allerbester Spiellaune für $session.params.title!"
+    ],
+    "greeting_prompts_2": [
+        "Hi!  Lass uns noch mal $session.params.title spielen!",
+        "Freu mich, dass du mal wieder eine Partie $session.params.title mit mir spielen willst!",
+        "Willkommen! Super, dass du wieder bei $session.params.title dabei bist.",
+        "Spielen wir eine neue Runde $session.params.title!"
+    ],
+    "help_prompts": [
+        "Okay, Hilfe im Anmarsch. In diesem Spiel werd ich dir $session.params.questionsPerGame Multiple-Choice-Fragen stellen. Du kannst mir entweder die Antwort nennen, oder einfach die Nummer, also eins, zwei oder drei. Du kannst außerdem ein neues Spiel starten, das derzeitige pausieren oder mich darum bitten, die Frage zu wiederholen. Willst du weiterspielen?"
+    ],
+    "hint_prompts": [
+        "Ich kann dir leider keinen Tipp geben. Aber das hast du auch gar nicht nötig. Du bist schließlich ein Profi! Versuchen wir's einfach noch mal!",
+        "Tut mir leid, aber ich darf dir keine Tipps geben. Hier ist die Frage noch mal.",
+        "Ich würd dir ja gerne einen Tipp geben, darf ich aber leider nicht. Probier's einfach noch mal."
+    ],
+    "introduction_prompts": [
+        "Bist du bereit? Lass uns spielen!",
+        "Juhu, los geht's!",
+        "Auf geht's.",
+        "Okay. Lass uns loslegen."
+    ],
+    "last_category_difficulty_prompt": [
+        "Das sind die letzten, die zur Auswahl stehen."
+    ],
+    "lets_play_prompts": [
+        "Okay. Lass uns loslegen.",
+        "Jetzt gibt's kein Zurück mehr, das Spiel beginnt.",
+        "Ich hoffe, du bist bereit, dein Glück zu versuchen.",
+        "Auf geht's.",
+        "Ich freu mich, dass du dabei bist! Packen wir's an.",
+        "Okay. Lass uns spielen.",
+        "Das Spiel beginnt JETZT.",
+        "Los geht's.",
+        "Zeit zum Spielen."
+    ],
+    "misc_prompts_false": [
+        "falsch"
+    ],
+    "misc_prompts_more": [
+        "Mehr"
+    ],
+    "misc_prompts_no": [
+        "Nein"
+    ],
+    "misc_prompts_or": [
+        "oder"
+    ],
+    "misc_prompts_play_again": [
+        "Noch mal spielen"
+    ],
+    "misc_prompts_stop_playing": [
+        "Spiel stoppen"
+    ],
+    "misc_prompts_true": [
+        "richtig"
+    ],
+    "misc_prompts_yes": [
+        "Ja"
+    ],
+    "next_question_prompts": [
+        "Okay, nächste Frage.",
+        "Versuch's als Nächstes mit dieser.",
+        "Probier's doch mal mit dieser.",
+        "Hier ist eine echt gute.",
+        "Und noch eine für dich."
+    ],
+    "no_input_prompts": [
+        "Keine Eingabe erkannt.",
+        "Die Menschen reagieren nicht.",
+        "Spielsequenz bis zum nächsten Spiel abgeschlossen."
+    ],
+    "no_input_prompts_1": [
+        "Keine Eingabe erkannt."
+    ],
+    "no_input_prompts_2": [
+        "Die Menschen reagieren nicht."
+    ],
+    "no_input_prompts_3": [
+        "Spielsequenz bis zum nächsten Spiel abgeschlossen."
+    ],
+    "none_correct_prompts": [
+        "Menno! Du hast nichts richtig beantwortet, aber keine Sorge. Es waren auch echt knifflige Fragen!",
+        "Verflixt! Diesmal war leider keine richtige Antwort dabei. Aber beim nächsten Spiel klappt's bestimmt!",
+        "Ist das zu fassen? Du lagst immer daneben. Dabei bist du so gut!",
+        "Ich trau's mich kaum sagen. Nichts richtig, überhaupt nichts. Aber Kopf hoch! Das war ne echt schwierige Partie."
+    ],
+    "play_again_category_difficulty": [
+        "Möchtest du $session.params.category $session.params.difficulty noch mal spielen? Oder etwas Neues ausprobieren?"
+    ],
+    "play_again_question_prompts": [
+        "Du willst noch mal spielen. Hab ich das richtig verstanden?",
+        "Lass uns noch mal spielen. Biste dabei?",
+        "Und, noch ne Runde? Bitte, bitte, bitte."
+    ],
+    "question_prompts": [
+        "Mach dich startklar, denn jetzt kommt's.",
+        "Versuch's mal hiermit.",
+        "Die hier ist gut.",
+        "Los geht's...",
+        "Die packst du."
+    ],
+    "questions_count_prompts": [
+        "Ich hab $session.params.questionsPerGame Fragen für dich.",
+        "$session.params.questionsPerGame Fragen im Anmarsch!"
+    ],
+    "quit_prompts": [
+        "Das hat echt Spaß gemacht! Ich hoffe, dir auch! Tschüss!",
+        "Danke fürs Spielen! Ich hoffe, du spielst bald wieder mit!",
+        "Tschüss! Hoffentlich bis bald, zur nächsten Partie!"
+    ],
+    "rapid_reprompts": [
+        "Kannst du das bitte noch mal sagen?",
+        "Noch mal, bitte.",
+        "Was hast du gesagt?"
+    ],
+    "re_prompt": [
+        "Super!",
+        "Prima!",
+        "Yippie!",
+        "Hurra!"
+    ],
+    "repeat_prompts": [
+        "Klar doch.",
+        "Jep."
+    ],
+    "restart_confirmation": [
+        "Möchtest du von vorne anfangen?",
+        "Möchtest du neu starten?",
+        "Willst du ganz von vorne anfangen?"
+    ],
+    "restart_yes": [
+        "Ok, dann fangen wir von vorne an.",
+        "Ok, wir fangen von vorne an.",
+        "Ok, zurück zum Anfang."
+    ],
+    "right_answer_prompts_1": [
+        "Juhu! Volltreffer!",
+        "Hut ab – stimmt genau!",
+        "Gut gemacht!",
+        "Gratuliere!",
+        "Das war absolut richtig.",
+        "Ja, stimmt genau.",
+        "Korrekt, du bist so schlau!",
+        "Stimmt genau. Nicht schlecht!",
+        "Du bist ja ein wandelndes Lexikon.",
+        "Manchmal liegst sogar du daneben, diesmal allerdings nicht!",
+        "Du hast recht. Ein Klacks für dich.",
+        "Du scheinst das im Schlaf zu machen. Richtige Antwort.",
+        "Jep, das stimmt.",
+        "Ganz genau!",
+        "Natürlich richtig.",
+        "Treffer!",
+        "Das sieht mir nach ner richtigen Antwort aus."
+    ],
+    "right_answer_prompts_2": [
+        "Es ist $session.params.correctAnswer!",
+        "$session.params.correctAnswer ist richtig!"
+    ],
+    "round_prompts": [
+        "Als Nächstes kommt Frage $session.params.questionNumber.",
+        "Jetzt kommt Frage $session.params.questionNumber.",
+        "Frage Nummer $session.params.questionNumber.",
+        "frage $session.params.questionNumber lautet:"
+    ],
+    "say_number_prompts": [
+        "Sag einfach die zur Antwort gehörende Nummer."
+    ],
+    "selection_confirmation_prompts": [
+        "$session.params.selection. Wird gemacht!"
+    ],
+    "skip_prompts": [
+        "Sicher, weiter geht's.",
+        "Weiter geht's im Text!",
+        "Kein Ding.",
+        "Sicher doch!",
+        "Probieren wir's mit der nächsten.",
+        "Alles klar.",
+        "Okay, die wird übersprungen."
+    ],
+    "some_correct_prompts": [
+        "Alle Achtung! Du hast $session.params.correctCount richtig beantwortet. Gratuliere!",
+        "Du hast $session.params.correctCount richtig beantwortet. Das lässt sich schon sehen! Beim nächsten Mal wirst du dich bestimmt selbst übertreffen.",
+        "Gut gemacht! Diesmal hast du $session.params.correctCount richtig beantwortet. Nächstes Mal werden es bestimmt noch mehr!"
+    ],
+    "stop_prompts": [
+        "Ich könnt ewig weiterspielen, aber wenn es dir reicht, sag einfach: \"Stopp\".",
+        "Wenn du weiterspielen würdest, würde mich das superglücklich machen. Aber falls du früher aufhören möchtest, sag einfach \"Stopp\".",
+        "Es wäre zwar echt schade, wenn du aufhörst, zu spielen, aber wenn du wirklich willst, sag einfach: \"Stopp\"."
+    ],
+    "switch_prompts": [
+        "Probieren wir's mit etwas Neuem!"
+    ],
+    "true_false_prompts": [
+        "richtig oder falsch: $session.params.currentQuestion"
+    ],
+    "wrong_answer_for_question_promp": [
+        "Knapp daneben ist leider auch vorbei."
+    ],
+    "wrong_answer_prompts_1": [
+        "Oh, Mist! Leider falsch.",
+        "Fast! Aber leider nicht ganz.",
+        "Oh, leider knapp vorbei.",
+        "Sorry, das war falsch.",
+        "Da lagst du leider daneben.",
+        "Sorry, nicht ganz richtig.",
+        "Nee, das ist es nicht.",
+        "Du warst ganz nah dran.",
+        "Du hattest es fast.",
+        "Ups, das war nicht ganz richtig.",
+        "Na ja, ähm, nein. Nicht ganz.",
+        "Das war echt knifflig. Tut mir echt leid.",
+        "Tut mir leid, da hast du dich geirrt.",
+        "Gut geraten, aber leider falsch. Tut mir leid."
+    ],
+    "wrong_answer_prompts_2": [
+        "Die richtige Antwort ist $session.params.correctAnswer.",
+        "Nein, es ist $session.params.correctAnswer.",
+        "$session.params.correctAnswer wär's gewesen.",
+        "Hättest du doch bloß $session.params.correctAnswer gesagt.",
+        "Die Antwort, die ich hören wollte, war $session.params.correctAnswer.",
+        "Es ist $session.params.correctAnswer. Nächstes Mal hast du bestimmt mehr Glück."
+    ],
+    "your_score_prompts": [
+        "Deine Punktzahl ist derzeit $session.params.correctCount.",
+        "Deine Punktzahl ist $session.params.correctCount."
+    ]
+  }
+}

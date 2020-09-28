@@ -1,0 +1,45 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+trainingPhrases:
+- dont
+- not now
+- stay away
+- turn off
+- switch off
+- "off"
+- do not
+- negative
+- don't start
+- not at all
+- no way
+- of course not
+- not
+- never
+- I have better things to do
+- I am good
+- not this time
+- I don't think so
+- goodbye
+- absolutely not
+- not exactly
+- Next time
+- forget it
+- not likely
+- Let's not do that
+- I don't think
+- negatory
+- Nah
+- "No"
+- Nope
+- I'm good

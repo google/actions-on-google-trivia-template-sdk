@@ -1,0 +1,73 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+ALL_CORRECT_PROMPTS: $resources.strings.main.all_correct_prompts
+CORRECT_ANSWER_ONLY_PROMPTS: $resources.strings.main.correct_answer_only_prompts
+CORRECT_ANSWER_PROMPTS: $resources.strings.main.correct_answer_prompts
+DEEPLINK_PROMPT: $resources.strings.main.deeplink_prompt
+DISAGREE_PROMPTS: $resources.strings.main.disagree_prompts
+END_PROMPTS: $resources.strings.main.end_prompts
+FALLBACK_PROMPT_1: $resources.strings.main.fallback_prompt_1
+FALLBACK_PROMPT_2: $resources.strings.main.fallback_prompt_2
+FEELING_LUCKY_PROMPTS: $resources.strings.main.feeling_lucky_prompts
+FINAL_ROUND_PROMPTS: $resources.strings.main.final_round_prompts
+FIRST_ROUND_PROMPTS: $resources.strings.main.first_round_prompts
+FORCED_SELECTION_PROMPTS: $resources.strings.main.forced_selection_prompts
+GAME_OVER_PROMPTS_1: $resources.strings.main.game_over_prompts_1
+GAME_OVER_PROMPTS_2: $resources.strings.main.game_over_prompts_2
+GREETING_PROMPTS_1: $resources.strings.main.greeting_prompts_1
+GREETING_PROMPTS_2: $resources.strings.main.greeting_prompts_2
+HELP_PROMPTS: $resources.strings.main.help_prompts
+HINT_PROMPTS: $resources.strings.main.hint_prompts
+INTRODUCTION_PROMPTS: $resources.strings.main.introduction_prompts
+LAST_CATEGORY_DIFFICULTY_PROMPT: $resources.strings.main.last_category_difficulty_prompt
+LETS_PLAY_PROMPTS: $resources.strings.main.lets_play_prompts
+MISC_PROMPTS_FALSE: $resources.strings.main.misc_prompts_false
+MISC_PROMPTS_MORE: $resources.strings.main.misc_prompts_more
+MISC_PROMPTS_NO: $resources.strings.main.misc_prompts_no
+MISC_PROMPTS_OR: $resources.strings.main.misc_prompts_or
+MISC_PROMPTS_PLAY_AGAIN: $resources.strings.main.misc_prompts_play_again
+MISC_PROMPTS_STOP_PLAYING: $resources.strings.main.misc_prompts_stop_playing
+MISC_PROMPTS_TRUE: $resources.strings.main.misc_prompts_true
+MISC_PROMPTS_YES: $resources.strings.main.misc_prompts_yes
+NEXT_QUESTION_PROMPTS: $resources.strings.main.next_question_prompts
+NO_INPUT_PROMPTS: $resources.strings.main.no_input_prompts
+NO_INPUT_PROMPTS_1: $resources.strings.main.no_input_prompts_1
+NO_INPUT_PROMPTS_2: $resources.strings.main.no_input_prompts_2
+NO_INPUT_PROMPTS_3: $resources.strings.main.no_input_prompts_3
+NONE_CORRECT_PROMPTS: $resources.strings.main.none_correct_prompts
+PLAY_AGAIN_CATEGORY_DIFFICULTY: $resources.strings.main.play_again_category_difficulty
+PLAY_AGAIN_QUESTION_PROMPTS: $resources.strings.main.play_again_question_prompts
+QUESTION_PROMPTS: $resources.strings.main.question_prompts
+QUESTIONS_COUNT_PROMPTS: $resources.strings.main.questions_count_prompts
+QUIT_PROMPTS: $resources.strings.main.quit_prompts
+RANGE_PROMPTS: $resources.strings.main.range_prompts
+RAPID_REPROMPTS: $resources.strings.main.rapid_reprompts
+RE_PROMPT: $resources.strings.main.re_prompt
+REPEAT_PROMPTS: $resources.strings.main.repeat_prompts
+RESTART_CONFIRMATION: $resources.strings.main.restart_confirmation
+RESTART_YES: $resources.strings.main.restart_yes
+RIGHT_ANSWER_PROMPTS_1: $resources.strings.main.right_answer_prompts_1
+RIGHT_ANSWER_PROMPTS_2: $resources.strings.main.right_answer_prompts_2
+ROUND_PROMPTS: $resources.strings.main.round_prompts
+SAY_NUMBER_PROMPTS: $resources.strings.main.say_number_prompts
+SELECTION_CONFIRMATION_PROMPTS: $resources.strings.main.selection_confirmation_prompts
+SKIP_PROMPTS: $resources.strings.main.skip_prompts
+SOME_CORRECT_PROMPTS: $resources.strings.main.some_correct_prompts
+STOP_PROMPTS: $resources.strings.main.stop_prompts
+SWITCH_PROMPTS: $resources.strings.main.switch_prompts
+TRUE_FALSE_PROMPTS: $resources.strings.main.true_false_prompts
+WRONG_ANSWER_FOR_QUESTION_PROMP: $resources.strings.main.wrong_answer_for_question_promp
+WRONG_ANSWER_PROMPTS_1: $resources.strings.main.wrong_answer_prompts_1
+WRONG_ANSWER_PROMPTS_2: $resources.strings.main.wrong_answer_prompts_2
+YOUR_SCORE_PROMPTS: $resources.strings.main.your_score_prompts
