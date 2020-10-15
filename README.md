@@ -1,61 +1,69 @@
-# Migration from the Trivia Quiz template to Actions Builder
+# Migration from the Trivia Quiz template to the Actions Builder
 
-This project contains the source code for the conversion from the [Trivia Quiz](https://developers.google.com/assistant/templates/trivia) template to the [Actions Builder](https://developers.google.com/assistant/conversational/build) platform.
+This step-by-step guide describes the project and its source code for the conversion from the [Trivia Quiz](https://developers.google.com/assistant/templates/trivia) template to the [Actions Builder](https://developers.google.com/assistant/conversational/build) platform.
 
 ## Directory structure
 
-The following table describes the file structure for this project:
+The file structure for the project is comprised of the following directories, as described:
 
-| Directory | Description                            |
-| --------- | -------------------------------------- |
-| converter | Sheets and locales conversion tool     |
-| functions | Fulfillment webhook source code        |
-| sdk       | Action SDK resource files              |
+- converter: Sheets and locales conversion tool
+- functions: Fulfillment webhook source code
+- sdk: Action SDK resource files
 
 ## Step 1: Prerequisites
 
 Before you begin the migration, perform the following steps:
 
-1. Install Node.js and NPM.
-   - We recommend that you install them with [Node Version Manager (nvm) for Linux and Mac](https://github.com/nvm-sh/nvm) or [nvm for Windows](https://github.com/coreybutler/nvm-windows).
-   - The webhook runtime requires Node.js version 10 or later.
+1. Install [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/get-npm) as follows:
+   - Install them with [Node Version Manager (nvm) for Linux and Mac](https://github.com/nvm-sh/nvm) or [nvm for Windows](https://github.com/coreybutler/nvm-windows).
+   - The webhook runtime requires Node.js version 10 or higher.
 
-2. Install the [Firebase CLI](https://developers.google.com/assistant/conversational/df-asdk/deploy-fulfillment).
-   - We recommend that you install it with MAJOR version 8. To do so, run the following command: `npm install -g firebase-tools@^8.0.0`.
-   - Run `firebase login` with your Google account.
+2. Install the [Firebase CLI](https://developers.google.com/assistant/conversational/df-asdk/deploy-fulfillment) as follows:
+   1. Install it with [MAJOR](https://firebase.google.com/docs/cli) version 8. To do so, run the following command: `npm install -g firebase-tools@^8.0.0`.
+   2. Run `firebase login` with your Google account.
 
-3. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions).
-   - Extract the package to a location of your choice and add the binary to your environment's PATH variable. Alternatively, extract the package to a location that's already in your PATH variable, such as `/usr/local/bin`.
-   - Run `gactions login` with your Google account.
+3. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions) as follows:
+   1. Extract the package to a location of your choice and add the binary to your environment's PATH variable. Alternatively, extract the package to a location that's already in your PATH variable, such as `/usr/local/bin`.
+   2. Run `gactions login` with your Google account.
 
-4. Go to [Google Sheet Node.js Quickstart](https://developers.google.com/sheets/api/quickstart/nodejs).
-   - From Step 1 on that page, click **Enable the Google Sheets API**.
-   - Pick a project name or use the default *Quickstart* name, then click **Next**. Note that this project isn't the same as a new Actions on Google project that's needed for migration.
-   - Under **Configure your Oauth client**, select **Desktop app**.
-   - Click **Create**.
-   - Click **Download client configuration** to download `credentials.json`. Save the JSON file in the `converter/` directory.
+4. Go to [Google Sheet Node.js Quickstart](https://developers.google.com/sheets/api/quickstart/nodejs) as follows:
+   1. From that page, go to [Step 1](https://developers.google.com/sheets/api/quickstart/nodejs#step_1_turn_on_the), and click **Enable the Google Sheets API**.
+   2. Enter a project name or select the default name, "Quickstart", then click **Next**.
+      - **Note:** this project isn't the same as a new "Actions on Google" project needed for migration.
+   3. For **Configure your Oauth client**, select **Desktop app**.
+   4. Click **Create**.
+   5. To download `credentials.json`, click **Download client configuration**.
+   6. Save the JSON file in the `converter/` directory.
 
 ## Step 2: Setup
 
+Create a new project in Actions Console and upgrade the Firebase price plan as described here.
+
 ### Create a new project in Actions Console
 
-From the [Actions on Google Console](https://console.actions.google.com/), select **New project&nbsp;> Create project** and then select **What kind of Action do you want to build?&nbsp;> Game&nbsp;> Blank project**.
+Perform the following steps:
 
-After the new project has been created, you should see the Actions Builder console. To find your Project ID, navigate to **More ⋮&nbsp;> Project settings&nbsp;> Project ID**.
+1. Go to [Actions on Google Console](https://console.actions.google.com/).
+2. Select **New project&nbsp;> Create project**.
+3. Select **What kind of Action do you want to build?&nbsp;> Game&nbsp;> Blank project**.
 
-> Be careful not to mix the Project ID with the Project Name.
+To find your Project ID, go to Actions on Google Console for your project, and go to **More ⋮&nbsp;> Project settings&nbsp;> Project ID**.
 
-### Upgrade Firebase pricing plan
+> **Note:** Don't confuse the Project ID with the Project Name.
 
-From the [Firebase Console](https://console.firebase.google.com/), select the same newly created project from Actions Console and upgrade its pricing plan to **Blaze (pay as you go)**.
+### Upgrade the Firebase price plan
 
-> A Blaze plan is required for the Cloud Functions with Node.js version 10 runtime.
+From the [Firebase Console](https://console.firebase.google.com/), select the same newly created project from Actions Console and upgrade its price plan to **Blaze (pay as you go)**.
+
+> **Caution:** A Blaze plan is required for Cloud Functions for Node.js version 10 runtime.
 
 ## Step 3: Migration
 
+Perform the steps described here.
+
 ### Sample sheets to create a new action
 
-To create a brand-new Trivia Quiz action, make a copy of the Trivia Quiz sample sheet in your preferred locale from the following list. Update the sheet with your own data. Alternatively, you can use your existing Trivia Quiz data sheet.
+To create a new Trivia Quiz action, make a copy of the Trivia Quiz sample sheet in your preferred locale-specific language. Update the sheet with your data. Alternatively, you can use your current Trivia Quiz data sheet. Refer to the following links to the Trivia Quiz sample sheets, in your preferred locale-specific language:
 
 - [de](https://docs.google.com/spreadsheets/d/1lJUqxdQmETErmWw-5YyJlw78rGBna3ANcMPBh8_sXO4/copy)
 - [en](https://docs.google.com/spreadsheets/d/1y3FHJgQlofapqcJDgfeW3umOlQHFQX-BV9gQA1tB1sE/copy)
@@ -78,64 +86,80 @@ To create a brand-new Trivia Quiz action, make a copy of the Trivia Quiz sample 
 
 ### Update the Trivia Quiz sheet ID
 
-Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your own Trivia Quiz data sheet ID for the specific locale you want to convert.
+Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your own Trivia Quiz data sheet ID for the specific locale you need to convert, as follows:
 
-- The Sheet ID can be located in the sheet URL: `https://docs.google.com/spreadsheets/d/`**`<SHEET_ID>`**`/edit#gid=0`.
-- Uncomment the specific locales you want to convert.
-- The sheet IDs provided in `converter/config.js` are the default sample sheets for each locale. To create a brand new Trivia Quiz action, make a copy of the sample sheet and update it with your own data.
-- Make sure the data sheet is owned by the same Google account that's performing the migration.
+1. Determine the Sheet ID, which is hard-coded as part of the sheet URL:  `https://docs.google.com/spreadsheets/d/`**`<SHEET_ID>`**`/edit#gid=0`.
+2. Uncomment the specific locales you need to convert.
+3. The sheet IDs provided in `converter/config.js` are the default sample sheets for each locale. To create a new Trivia Quiz action, make a copy of the sample sheet and update it with your own data.
+4. Verify that the data sheet is owned by the same Google Account that performs the migration.
 
 After you've updated the sheet ID, you have two options for how to proceed with the migration.
 
-### (Option 1) Migration script
+### Automatic migration script: Option 1
 
-To automatically run all the migration steps, run `./build.sh <PROJECT_ID>` from the root directory of this project.
+To automatically run all the migration steps, go to the root directory of the project, and run the following command: `./build.sh <PROJECT_ID>`. Be aware of the following guidance:
 
-- On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access. If you see a warning page that states "This app isn't verified", click **Advanced** to show the drop down text. Then, click **Go to Quickstart (unsafe)** to continue the authorization process.
-- Alternatively, you can follow the [manual migration steps](#option-2-manual-migration-steps) to perform the migration.
+- When the script is run for the first time, it asks you to grant read access to your sheets. To do so, go to the URL it provides, accept read access, and copy the authorization code and enter it when prompted by the script.
+- If you're taken to a warning page that says, "This app isn't verified," click **Advanced**. From the dropdown text that appears, click **Go to Quickstart (unsafe)** and continue the authorization process.
+- If you encounter an issue, you can, instead, perform a [manual migration steps](#Manual-migration:-Option-2).
 
-### (Option 2) Manual migration steps
+### Manual migration: Option 2
 
-To manually migrate your project, perform the steps given in the following three sections.
+To manually migrate the project, perform the steps described here:
+
+1. [Run the sheet and locale conversion script](#Run-the-sheet-and-locale-conversion-script)
+2. [Deploy the webhook to Cloud Functions for Firebase](#Deploy-the-webhook-to-Cloud-Functions-for-Firebase)
+3. [Use Actions CLI to push and preview your project](#Use-Actions-CLI-to-push-and-preview-your-project)
 
 #### Run the sheet and locale conversion script
 
-1. Navigate to the `converter/` directory. To do so, run `cd converter` from the root directory of this project.
+Perform the following steps:
+
+1. Go to the `converter/` directory. To do so, go to the root directory of the project and run `cd converter`.
 2. Run `npm install`.
-3. Run `npm run convert -- --project_id <PROJECT_ID>`.
-   - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access. If you see a warning page that states "This app isn't verified", click **Advanced** to show the drop down text. Then, click **Go to Quickstart (unsafe)** to continue the authorization process.
-   - After the conversion script finishes, the parsed sheet data is added to the `functions/data/` directory, while locale-specific data is added to the `sdk/` directory.
+3. Run `npm run convert -- --project_id <PROJECT_ID>`. Be aware of the following guidance:
+    - When the script is run for the first time, it asks you to grant read access to your sheets. To do so, go to the URL it provides, accept read access, and copy the authorization code and enter it when prompted by the script.
+    - If you're taken to a warning page that says, "This app isn't verified," click **Advanced**. From the dropdown text that appears, click **Go to Quickstart (unsafe)** and continue the authorization process.
+    - After the conversion script completes, the parsed sheet data is added to the `functions/data/` directory, and the locale-specific data is added to the `sdk/` directory.
 
 #### Deploy the webhook to Cloud Functions for Firebase
 
-1. Navigate to the `functions/` directory. To do so, run `cd functions` from the root directory of this project.
+Perform the following steps:
+
+1. Go to the `functions/` directory. To do so, go to the root directory of the project and run `cd functions`.
 2. Run `npm install`.
-3. To deploy the v1 webhook, run `firebase deploy --project <PROJECT_ID> --only functions:triviaQuiz_v1`.
-   - After you release a version of the action, you can update your webhook and test your changes without affecting your production action. To do so, we recommend that you update the `FUNCTION_VERSION` in `functions/config.js` to deploy a new webhook URL, such as `triviaQuiz_v2`.
+3. To deploy the "v1" webhook, run `firebase deploy --project <PROJECT_ID> --only functions:triviaQuiz_v1`.
+4. After you release a version of the action, you can update your webhook and test your changes, so that you avoid an effect to your production action. To do so, go to the `functions/config.js` file, and update the `FUNCTION_VERSION` value to an appropriate value such as `triviaQuiz_v2`. This update deploys a new webhook URL, which reflects the updated value.
 
 #### Use Actions CLI to push and preview your project
 
-1. Navigate to the `sdk/` directory. To do so, run `cd sdk` from the root directory of this project.
+Perform the following steps:
+
+1. Go to the `sdk/` directory. To do so, go to the root directory of the project and `cd sdk`.
 2. To login to your Google account, run `gactions login`.
 3. To push your project, run `gactions push`.
-   - To fix the validation warnings, update the missing Directory information in the **Deploy** section of the Actions Console.
-   - If you need to sync the changes made in the Actions Builder Console with your local `sdk/` directory, you can run `gactions pull`.
-4. To deploy your project to the preview environment, run `gactions deploy preview`.
+   - To fix the validation warnings, go to Actions Console, and from the **Deploy** section, update the missing directory information.
+   - If you need to sync the changes made in the Actions Builder Console with your local `sdk/` directory, run `gactions pull`.
+4. To deploy the project to the preview environment, run `gactions deploy preview`.
 
 ## Step 4: Test the converted action
 
-You can test your Action on any Google Assistant-enabled device that's signed into the same account that was used to create this project. You can also use the Actions on Google Console [simulator](https://developers.google.com/assistant/console/simulator) to test most features and preview on-device behavior.
+You can test your action on any Google Assistant-enabled device that's signed into the same account used to create the project. You can also use the [Actions on Google Console's simulator](https://developers.google.com/assistant/console/simulator) to test most features and preview on-device behavior.
 
-## References and issues
+## Support and additional resources
 
-- Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google) or the [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/).
-- If you find any bugs, report them through GitHub.
-- To learn more about Actions on Google, read our [documentation](https://developers.google.com/assistant).
-- To get guided, hands-on practice with Actions on Google, try some of our [Codelabs](https://codelabs.developers.google.com/?cat=Assistant).
+If you encounter an issue or need additional information, refer to any of the following:
+
+- If you have a question, the following forums are singificantly helpful:
+  - [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google)
+  - [Reddit's Assistant Developer Community](https://www.reddit.com/r/GoogleAssistantDev/)
+- If you find any bugs, report them through [GitHub](https://github.com/google/actions-on-google-trivia-template-sdk/issues).
+- To learn more about Actions on Google, refer to [Google Assistant's developer documentation](https://developers.google.com/assistant).
+- For guided, hands-on practice with Actions on Google, try some of the [Codelabs for Google Assistant](https://codelabs.developers.google.com/?cat=Assistant).
 
 ## Contribute
 
-To contribute to this project, follow the steps on the [CONTRIBUTING.md](CONTRIBUTING.md) page.
+To contribute to this project, adhere to the steps described on the [CONTRIBUTING.md](CONTRIBUTING.md) page.
 
 ## License
 
