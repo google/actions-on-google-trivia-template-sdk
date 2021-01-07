@@ -293,7 +293,7 @@
         "Oje. Du siehst das anders? Ich hab's überprüft, das stimmt so. Tut mir echt leid!"
     ],
     "end_prompts": [
-        "Okay, deine Punktzahl war $session.params.correctCount von $session.params.questionsPerGame. Tschüss!"
+        "Okay, deine Punktzahl war $session.params.correctCount von $session.params.quizSettings.questionsPerGame. Tschüss!"
     ],
     "fallback_prompt_1": [
         "Schon genug?",
@@ -343,7 +343,7 @@
         "Spielen wir eine neue Runde $session.params.title!"
     ],
     "help_prompts": [
-        "Okay, Hilfe im Anmarsch. In diesem Spiel werd ich dir $session.params.questionsPerGame Multiple-Choice-Fragen stellen. Du kannst mir entweder die Antwort nennen, oder einfach die Nummer, also eins, zwei oder drei. Du kannst außerdem ein neues Spiel starten, das derzeitige pausieren oder mich darum bitten, die Frage zu wiederholen. Willst du weiterspielen?"
+        "Okay, Hilfe im Anmarsch. In diesem Spiel werd ich dir $session.params.quizSettings.questionsPerGame Multiple-Choice-Fragen stellen. Du kannst mir entweder die Antwort nennen, oder einfach die Nummer, also eins, zwei oder drei. Du kannst außerdem ein neues Spiel starten, das derzeitige pausieren oder mich darum bitten, die Frage zu wiederholen. Willst du weiterspielen?"
     ],
     "hint_prompts": [
         "Ich kann dir leider keinen Tipp geben. Aber das hast du auch gar nicht nötig. Du bist schließlich ein Profi! Versuchen wir's einfach noch mal!",
@@ -437,8 +437,8 @@
         "Die packst du."
     ],
     "questions_count_prompts": [
-        "Ich hab $session.params.questionsPerGame Fragen für dich.",
-        "$session.params.questionsPerGame Fragen im Anmarsch!"
+        "Ich hab $session.params.quizSettings.questionsPerGame Fragen für dich.",
+        "$session.params.quizSettings.questionsPerGame Fragen im Anmarsch!"
     ],
     "quit_prompts": [
         "Das hat echt Spaß gemacht! Ich hoffe, dir auch! Tschüss!",

@@ -235,7 +235,7 @@
         "納得いかないようですね。でもやはり不正解のようです。残念ですが。"
     ],
     "end_prompts": [
-        "$session.params.correctCount 問中 $session.params.questionsPerGame 問正解でした。それではまた！"
+        "$session.params.correctCount 問中 $session.params.quizSettings.questionsPerGame 問正解でした。それではまた！"
     ],
     "fallback_prompt_1": [
         "終了しますか？",
@@ -285,7 +285,7 @@
         "もう少し $session.params.title をプレイしましょう！"
     ],
     "help_prompts": [
-        "遊び方を簡単に説明します。このゲームでは、選択式の問題を $session.params.questionsPerGame 問出題します。答えをそのまま言っても構いませんし、番号で答えることもできます。新しいゲームを始めたり、途中で止めたり、問題を聞き直したりできます。このまま続けますか？"
+        "遊び方を簡単に説明します。このゲームでは、選択式の問題を $session.params.quizSettings.questionsPerGame 問出題します。答えをそのまま言っても構いませんし、番号で答えることもできます。新しいゲームを始めたり、途中で止めたり、問題を聞き直したりできます。このまま続けますか？"
     ],
     "hint_prompts": [
         "ヒントは出せないんです。でもあなたならヒントなしで大丈夫。もう一度答えをどうぞ！",
@@ -379,8 +379,8 @@
         "よろしいですか。"
     ],
     "questions_count_prompts": [
-        "問題は全部で $session.params.questionsPerGame 問です。",
-        "これから $session.params.questionsPerGame 問出題します。"
+        "問題は全部で $session.params.quizSettings.questionsPerGame 問です。",
+        "これから $session.params.quizSettings.questionsPerGame 問出題します。"
     ],
     "quit_prompts": [
         "ありがとうございました。楽しんでいただけましたか？それではまた！",

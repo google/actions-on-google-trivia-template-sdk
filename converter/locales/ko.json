@@ -244,7 +244,7 @@
         "이런, 동의하지 않으시는 것 같지만 제가 보기엔 답은 맞습니다. 죄송합니다."
     ],
     "end_prompts": [
-        "점수는 $session.params.correctCount점 만점에 $session.params.questionsPerGame점입니다. 안녕히 가세요!"
+        "점수는 $session.params.correctCount점 만점에 $session.params.quizSettings.questionsPerGame점입니다. 안녕히 가세요!"
     ],
     "fallback_prompt_1": [
         "그만하시겠습니까?",
@@ -294,7 +294,7 @@
         "$session.params.title 게임을 더 해 볼까요."
     ],
     "help_prompts": [
-        "도움말을 알려 드릴게요. 이 게임에서는 객관식 질문 $session.params.questionsPerGame개를 드립니다. 정답을 말하거나 일번, 이번, 삼번 이렇게 번호를 얘기하셔도 됩니다. 새 게임을 시작하거나 현재 진행 중인 게임을 중지하거나 질문을 반복하도록 요청하실 수 있습니다. 계속 플레이하시겠습니까?"
+        "도움말을 알려 드릴게요. 이 게임에서는 객관식 질문 $session.params.quizSettings.questionsPerGame개를 드립니다. 정답을 말하거나 일번, 이번, 삼번 이렇게 번호를 얘기하셔도 됩니다. 새 게임을 시작하거나 현재 진행 중인 게임을 중지하거나 질문을 반복하도록 요청하실 수 있습니다. 계속 플레이하시겠습니까?"
     ],
     "hint_prompts": [
         "죄송하지만 힌트는 드릴 수 없어요. 하지만 지금은 필요 없으실 거예요. 정말 잘하시네요. 다시 시도해보죠.",
@@ -388,8 +388,8 @@
         "잘 하실 수 있을 거예요."
     ],
     "questions_count_prompts": [
-        "문제 $session.params.questionsPerGame개가 준비되어 있습니다.",
-        "문제가 $session.params.questionsPerGame개 나갑니다."
+        "문제 $session.params.quizSettings.questionsPerGame개가 준비되어 있습니다.",
+        "문제가 $session.params.quizSettings.questionsPerGame개 나갑니다."
     ],
     "quit_prompts": [
         "저는 정말 재미있었어요. 즐겨우셨으면 좋겠어요. 안녕히 가세요.",

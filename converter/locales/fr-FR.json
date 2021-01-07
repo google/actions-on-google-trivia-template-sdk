@@ -267,7 +267,7 @@
         "Vous n'êtes pas d'accord… Je n'ai pourtant pas l'habitude de me tromper. Passons à une autre !"
     ],
     "end_prompts": [
-        "ok. voici votre score : $session.params.correctCount sur $session.params.questionsPerGame. Au revoir !"
+        "ok. voici votre score : $session.params.correctCount sur $session.params.quizSettings.questionsPerGame. Au revoir !"
     ],
     "fallback_prompt_1": [
         "C'est fini pour aujourd'hui ?",
@@ -317,7 +317,7 @@
         "Et si on jouait encore un peu $session.params.title !"
     ],
     "help_prompts": [
-        "OK, quelques explications. Pour ce jeu, je vais vous poser $session.params.questionsPerGame questions à choix multiple. Vous pouvez donner la réponse ou simplement m'indiquer le numéro correspondant, par exemple un, deux ou trois. Vous pouvez aussi commencer une nouvelle partie, arrêter celle qui est en cours, ou me demander de répéter la question. On se lance ?"
+        "OK, quelques explications. Pour ce jeu, je vais vous poser $session.params.quizSettings.questionsPerGame questions à choix multiple. Vous pouvez donner la réponse ou simplement m'indiquer le numéro correspondant, par exemple un, deux ou trois. Vous pouvez aussi commencer une nouvelle partie, arrêter celle qui est en cours, ou me demander de répéter la question. On se lance ?"
     ],
     "hint_prompts": [
         "Je ne peux pas vous donner d'indice. Mais soyons honnêtes, vous n'en avez pas besoin. Vous trouvez toujours ! Allez, on réessaie.",
@@ -411,8 +411,8 @@
         "Vous allez y arriver."
     ],
     "questions_count_prompts": [
-        "J'ai préparé $session.params.questionsPerGame questions pour vous.",
-        "C'est parti pour $session.params.questionsPerGame questions !"
+        "J'ai préparé $session.params.quizSettings.questionsPerGame questions pour vous.",
+        "C'est parti pour $session.params.quizSettings.questionsPerGame questions !"
     ],
     "quit_prompts": [
         "C'était génial, j'ai adoré ! Vous aussi, j'espère ! Au revoir !",

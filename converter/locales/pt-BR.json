@@ -268,7 +268,7 @@
         "Parece que você não concorda, mas eu acho que está certo. Desculpe!"
     ],
     "end_prompts": [
-        "OK, você acertou $session.params.correctCount de $session.params.questionsPerGame. Tchau!"
+        "OK, você acertou $session.params.correctCount de $session.params.quizSettings.questionsPerGame. Tchau!"
     ],
     "fallback_prompt_1": [
         "Terminou?",
@@ -318,7 +318,7 @@
         "Vamos jogar mais um pouco de $session.params.title!"
     ],
     "help_prompts": [
-        "OK, vou ajudar. Neste jogo, farei $session.params.questionsPerGame perguntas de múltipla escolha. Você pode dizer a resposta ou apenas o número da resposta, como um, dois ou três. Você também pode começar um novo jogo, interromper o jogo atual ou até pedir para repetir a pergunta. Quer continuar jogando?"
+        "OK, vou ajudar. Neste jogo, farei $session.params.quizSettings.questionsPerGame perguntas de múltipla escolha. Você pode dizer a resposta ou apenas o número da resposta, como um, dois ou três. Você também pode começar um novo jogo, interromper o jogo atual ou até pedir para repetir a pergunta. Quer continuar jogando?"
     ],
     "hint_prompts": [
         "Desculpa, não posso dar uma dica. Mas você não precisa de dicas. Eu sei que você vai acertar! Vamos tentar de novo.",
@@ -412,8 +412,8 @@
         "Confio em você."
     ],
     "questions_count_prompts": [
-        "Eu tenho $session.params.questionsPerGame perguntas para você.",
-        "$session.params.questionsPerGame perguntas chegando."
+        "Eu tenho $session.params.quizSettings.questionsPerGame perguntas para você.",
+        "$session.params.quizSettings.questionsPerGame perguntas chegando."
     ],
     "quit_prompts": [
         "Eu me diverti muito. Espero que você também tenha se divertido! Tchau!",

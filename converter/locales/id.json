@@ -274,7 +274,7 @@
         "Eh, nggak setuju? tapi menurut saya jawabannya benar. Maaf!"
     ],
     "end_prompts": [
-        "Oke, skor Anda $session.params.correctCount dari $session.params.questionsPerGame. Bye!"
+        "Oke, skor Anda $session.params.correctCount dari $session.params.quizSettings.questionsPerGame. Bye!"
     ],
     "fallback_prompt_1": [
         "Sudah selesai?",
@@ -324,7 +324,7 @@
         "Ayo kita main $session.params.title lagi!"
     ],
     "help_prompts": [
-        "Oke, ini sedikit petunjuk. Dalam game ini, saya akan tanya $session.params.questionsPerGame pertanyaan pilihan ganda. Anda bisa ucapkan jawabannya, atau nomor jawabannya saja, misalnya satu, dua, atau tiga. Anda juga bisa mulai game baru, stop game yang lagi dimainkan, atau bahkan minta diulangi pertanyaannya. Mau terus main?"
+        "Oke, ini sedikit petunjuk. Dalam game ini, saya akan tanya $session.params.quizSettings.questionsPerGame pertanyaan pilihan ganda. Anda bisa ucapkan jawabannya, atau nomor jawabannya saja, misalnya satu, dua, atau tiga. Anda juga bisa mulai game baru, stop game yang lagi dimainkan, atau bahkan minta diulangi pertanyaannya. Mau terus main?"
     ],
     "hint_prompts": [
         "Maaf, saya nggak bisa kasih petunjuk. Tapi memang nggak perlu petunjuk kan. Anda sudah hebat soal ini! Ayo kita coba lagi.",
@@ -418,8 +418,8 @@
         "Anda pasti bisa."
     ],
     "questions_count_prompts": [
-        "Saya punya $session.params.questionsPerGame pertanyaan untuk Anda.",
-        "$session.params.questionsPerGame pertanyaan, segera!"
+        "Saya punya $session.params.quizSettings.questionsPerGame pertanyaan untuk Anda.",
+        "$session.params.quizSettings.questionsPerGame pertanyaan, segera!"
     ],
     "quit_prompts": [
         "Permainannya tadi menyenangkan ya! Semoga kamu juga senang! Dah!",

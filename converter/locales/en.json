@@ -316,7 +316,7 @@
         "Uh-oh, looks like you disagree, but it looks right to me. Sorry!"
     ],
     "end_prompts": [
-        "OK, your score was $session.params.correctCount out of $session.params.questionsPerGame. Bye!"
+        "OK, your score was $session.params.correctCount out of $session.params.quizSettings.questionsPerGame. Bye!"
     ],
     "fallback_prompt_1": [
         "All done?",
@@ -366,7 +366,7 @@
         "Let's play some more $session.params.title!"
     ],
     "help_prompts": [
-        "OK, here's some help. In this game, I'm gonna ask you $session.params.questionsPerGame multiple choice questions. You can say the answer, or just the number of the answer, like one, two, or three. You can also start a new game, stop the current game or even ask me to repeat  the question. Wanna keep playing?"
+        "OK, here's some help. In this game, I'm gonna ask you $session.params.quizSettings.questionsPerGame multiple choice questions. You can say the answer, or just the number of the answer, like one, two, or three. You can also start a new game, stop the current game or even ask me to repeat  the question. Wanna keep playing?"
     ],
     "hint_prompts": [
         "Sorry, I can't give you a hint. But you don't need one anyway. You're so good at this! Let's try again.",
@@ -460,8 +460,8 @@
         "You got this."
     ],
     "questions_count_prompts": [
-        "I have $session.params.questionsPerGame questions for you.",
-        "$session.params.questionsPerGame questions, coming up!"
+        "I have $session.params.quizSettings.questionsPerGame questions for you.",
+        "$session.params.quizSettings.questionsPerGame questions, coming up!"
     ],
     "quit_prompts": [
         "I had so much fun! Hope you did too! Bye!",

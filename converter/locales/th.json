@@ -258,7 +258,7 @@
         "เหมือนคุณจะไม่เห็นด้วยใช่ไหม แต่ฉันว่ามันถูกแล้วนะ ขอโทษด้วย"
     ],
     "end_prompts": [
-        "คุณได้ $session.params.correctCount จากทั้งหมด $session.params.questionsPerGame คะแนน ไว้พบกันใหม่นะ"
+        "คุณได้ $session.params.correctCount จากทั้งหมด $session.params.quizSettings.questionsPerGame คะแนน ไว้พบกันใหม่นะ"
     ],
     "fallback_prompt_1": [
         "ไม่เล่นแล้วเหรอ",
@@ -308,7 +308,7 @@
         "มาเล่น $session.params.title กันอีกดีกว่า!"
     ],
     "help_prompts": [
-        "เอาล่ะ ฉันขอแนะนำสักเล็กน้อย เกมนี้ ฉันจะถามคำถามแบบเลือกตอบทั้งหมด $session.params.questionsPerGame ข้อ คุณแค่บอกคำตอบ หรือตัวเลขของคำตอบ เช่น หนึ่ง สอง หรือสาม คุณสามารถเริ่มเกมใหม่ได้ หยุดพักเกมที่เล่นอยู่ หรือให้ฉันทวนคำถามก็ได้ พร้อมจะเล่นไหม"
+        "เอาล่ะ ฉันขอแนะนำสักเล็กน้อย เกมนี้ ฉันจะถามคำถามแบบเลือกตอบทั้งหมด $session.params.quizSettings.questionsPerGame ข้อ คุณแค่บอกคำตอบ หรือตัวเลขของคำตอบ เช่น หนึ่ง สอง หรือสาม คุณสามารถเริ่มเกมใหม่ได้ หยุดพักเกมที่เล่นอยู่ หรือให้ฉันทวนคำถามก็ได้ พร้อมจะเล่นไหม"
     ],
     "hint_prompts": [
         "ขอโทษด้วยที่ให้คำใบ้คุณไม่ได้ แต่คุณไม่ต้องใช้คำใบ้ก็ได้ จริงไหม คุณเก่งอยู่แล้ว! มาลองกันอีกครั้งดีกว่า",
@@ -402,8 +402,8 @@
         "คุณรู้คำตอบแน่ๆ"
     ],
     "questions_count_prompts": [
-        "ฉันมีคำถามทั้งหมด $session.params.questionsPerGame ข้อ",
-        "คำถาม $session.params.questionsPerGame ข้อพร้อมแล้ว"
+        "ฉันมีคำถามทั้งหมด $session.params.quizSettings.questionsPerGame ข้อ",
+        "คำถาม $session.params.quizSettings.questionsPerGame ข้อพร้อมแล้ว"
     ],
     "quit_prompts": [
         "ฉันสนุกมาก หวังว่าคุณก็สนุกเช่นกัน บ๊ายบาย!",

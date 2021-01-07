@@ -267,7 +267,7 @@
         "Oups! On dirait que vous n'êtes pas d'accord, mais ça me semble juste. Désolée!"
     ],
     "end_prompts": [
-        "D'accord, votre pointage était de $session.params.correctCount sur $session.params.questionsPerGame. Au revoir!"
+        "D'accord, votre pointage était de $session.params.correctCount sur $session.params.quizSettings.questionsPerGame. Au revoir!"
     ],
     "fallback_prompt_1": [
         "Vous avez terminé?",
@@ -317,7 +317,7 @@
         "Jouons encore à $session.params.title!"
     ],
     "help_prompts": [
-        "D'accord, vous voulez obtenir de l'aide. Dans ce jeu, je vais vous poser $session.params.questionsPerGame questions à choix multiple. Vous pouvez dire la réponse, ou seulement le numéro de la réponse, par exemple, un, deux ou trois. Vous pouvez également commencer un nouveau jeu, arrêter le jeu en cours ou même me demander de répéter la question. Vous voulez continuer à jouer?"
+        "D'accord, vous voulez obtenir de l'aide. Dans ce jeu, je vais vous poser $session.params.quizSettings.questionsPerGame questions à choix multiple. Vous pouvez dire la réponse, ou seulement le numéro de la réponse, par exemple, un, deux ou trois. Vous pouvez également commencer un nouveau jeu, arrêter le jeu en cours ou même me demander de répéter la question. Vous voulez continuer à jouer?"
     ],
     "hint_prompts": [
         "Désolée, je ne peux pas vous donner d'indices. Mais vous n'en avez pas besoin de toute façon. Vous êtes incroyable à ce jeu! Essayons de nouveau.",
@@ -411,8 +411,8 @@
         "Vous avez compris."
     ],
     "questions_count_prompts": [
-        "J'ai $session.params.questionsPerGame questions pour vous.",
-        "$session.params.questionsPerGame questions arrivent!"
+        "J'ai $session.params.quizSettings.questionsPerGame questions pour vous.",
+        "$session.params.quizSettings.questionsPerGame questions arrivent!"
     ],
     "quit_prompts": [
         "J'ai eu beaucoup de plaisir! J'espère que vous en avez eu autant que moi! Au revoir!",
