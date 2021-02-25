@@ -468,7 +468,7 @@
       "La risposta giusta è $session.params.correctAnswer!"
     ],
     "round_prompts": [
-      "La domanda $ session.params.questionNumber è in arrivo.",
+      "La domanda $session.params.questionNumber è in arrivo.",
       "Ecco la domanda $session.params.questionNumber.",
       "Domanda numero $session.params.questionNumber.",
       "La domanda $session.params.questionNumber è questa."
