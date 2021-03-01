@@ -312,7 +312,7 @@
     ],
     "greeting_prompts_2": [
       "Ciao! Giochiamo di nuovo a $session.params.title!",
-      "Sono felice che tu abbia giocato di nuovo a $session.params.title!",
+      "Sono felice di giocare ancora con te a $session.params.title!",
       "Ciao, bentornato a $session.params.title.",
       "Giochiamo di nuovo a $session.params.title!"
     ],
