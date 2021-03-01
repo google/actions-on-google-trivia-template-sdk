@@ -312,7 +312,7 @@
     ],
     "greeting_prompts_2": [
       "Ciao! Giochiamo di nuovo a $session.params.title!",
-      "Sono felice che tu abbia giocato di nuovo a $session.params.title!",
+      "Sono felice di giocare ancora con te a $session.params.title!",
       "Ciao, bentornato a $session.params.title.",
       "Giochiamo di nuovo a $session.params.title!"
     ],
@@ -468,7 +468,7 @@
       "La risposta giusta è $session.params.correctAnswer!"
     ],
     "round_prompts": [
-      "La domanda $ session.params.questionNumber è in arrivo.",
+      "La domanda $session.params.questionNumber è in arrivo.",
       "Ecco la domanda $session.params.questionNumber.",
       "Domanda numero $session.params.questionNumber.",
       "La domanda $session.params.questionNumber è questa."
