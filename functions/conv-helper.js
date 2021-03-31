@@ -240,7 +240,10 @@ class ConvHelper {
     if (!audioUrl) {
       audioUrl = util.array.randomPick(defaultAudios[audioType]);
     }
-    return `<audio src="${audioUrl}"/>`;
+    if (audioUrl) { 
+      return `<audio src="${audioUrl}"/>`;
+    }
+    return '';
   }
 
   /**

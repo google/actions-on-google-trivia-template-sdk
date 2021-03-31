@@ -17,31 +17,20 @@
 const {Alias} = require('./constant');
 
 module.exports = {
-  [Alias.QUIZ_SETTINGS.AUDIO_GAME_INTRO]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/RobotIntro_Shortened1.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/RobotIntro_Shortened2.ogg',
-  ],
-  [Alias.QUIZ_SETTINGS.AUDIO_GAME_OUTRO]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/RobotOutro_Shortened_v1.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/RobotOutro_Shortened_v2.ogg',
-  ],
+  [Alias.QUIZ_SETTINGS.AUDIO_GAME_INTRO]: [],
+  [Alias.QUIZ_SETTINGS.AUDIO_GAME_OUTRO]: [],
   [Alias.QUIZ_SETTINGS.AUDIO_DING]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Trivia-Bot_Sounds_TriviaDing.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Trivia-Bot_Sounds_TriviaDing2.ogg',
+    'https://actions.google.com/sounds/v1/cartoon/instrument_strum.ogg',
   ],
   [Alias.QUIZ_SETTINGS.AUDIO_CORRECT]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Correct%20Ding%201.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Correct%20Ding%202.ogg',
+    'https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg',
   ],
   [Alias.QUIZ_SETTINGS.AUDIO_INCORRECT]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Incorrect%20Buzz%201.ogg',
+    'https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg',
   ],
-  [Alias.QUIZ_SETTINGS.AUDIO_ROUND_END]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Trivia-Bot_Sounds_EndOfRound.ogg',
-  ],
+  [Alias.QUIZ_SETTINGS.AUDIO_ROUND_END]: [],
   [Alias.QUIZ_SETTINGS.AUDIO_CALCULATING]: [
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Sounds%20Calc%201.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Sounds%20Calc%202.ogg',
-    'https://storage.googleapis.com/actionsprod.appspot.com/sounds/Robot%20Template%20Sounds%20Calc%203.ogg',
+    'https://actions.google.com/sounds/v1/cartoon/woodpecker.ogg',
   ],
 };
+ 
